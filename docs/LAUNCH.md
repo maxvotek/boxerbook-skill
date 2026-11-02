@@ -7,7 +7,7 @@ from his own account, and edit the wording to sound like him.
 
 ## 0. Before going public (one-time, ~15 min)
 
-1. `gh repo edit mvtk1978/boxerbook-skill --visibility public --accept-visibility-change-consequences`
+1. `gh repo edit maxvotek/boxerbook-skill --visibility public --accept-visibility-change-consequences`
 2. Create release `v1.0.0` with `dist/boxing-skill.zip` attached (the claude.ai
    download link in the README points to `releases/latest`):
    `python3 scripts/build_zip.py && gh release create v1.0.0 dist/boxing-skill.zip --title "v1.0.0" --notes-file CHANGELOG.md`
@@ -23,7 +23,7 @@ from his own account, and edit the wording to sound like him.
 
 | Directory | How | Gate |
 |---|---|---|
-| skills.sh (Vercel) | ranks by `npx skills add mvtk1978/boxerbook-skill` installs | none: installs = ranking |
+| skills.sh (Vercel) | ranks by `npx skills add maxvotek/boxerbook-skill` installs | none: installs = ranking |
 | skillsmp.com | crawls public GitHub for valid SKILL.md files | ~2 stars |
 | claude-plugins.dev | indexes public `marketplace.json` repos | public repo |
 | claudemarketplaces.com | daily crawl of skills.sh, GitHub and MCP registries; also a submit form | public repo |
@@ -50,7 +50,7 @@ Description for the form:
 - Section: **Data & Analysis**. No emojis.
 - Line:
   ```
-  - [Boxing (Boxerbook)](https://github.com/mvtk1978/boxerbook-skill) - Live boxing records, fight nights, results and rankings from the open Boxerbook database, always cited; bundles a remote MCP server. *By [@mvtk1978](https://github.com/mvtk1978)*
+  - [Boxing (Boxerbook)](https://github.com/maxvotek/boxerbook-skill) - Live boxing records, fight nights, results and rankings from the open Boxerbook database, always cited; bundles a remote MCP server. *By [@maxvotek](https://github.com/maxvotek)*
   ```
 - PR body:
   > **What it does:** gives Claude live professional boxing data (30k boxers, 190k bouts, schedule, results with sources, publisher rankings) from Boxerbook, with strict rules: no invented records, a boxerbook.com link for every fighter and bout, explicit dates, no betting tips.
@@ -63,7 +63,7 @@ Description for the form:
   wrappers. Max must write this one himself, after the repo has 10+ stars.
 - Section: Community Skills → Individual Skills (table row):
   ```
-  | **[boxing](https://github.com/mvtk1978/boxerbook-skill)** | Live, cited boxing records, results, schedules and rankings from the open Boxerbook database |
+  | **[boxing](https://github.com/maxvotek/boxerbook-skill)** | Live, cited boxing records, results, schedules and rankings from the open Boxerbook database |
   ```
 
 ### hesreallyhim/awesome-claude-code (57k stars)
@@ -76,8 +76,8 @@ Description for the form:
 
 ### VoltAgent/awesome-agent-skills (36.7k stars)
 - Wants real community usage first; submit after the first ~50 stars or installs.
-- PR title: `Add skill: mvtk1978/boxing`
-- Line (10 words or fewer): `- **[mvtk1978/boxing](https://github.com/mvtk1978/boxerbook-skill)** - Live, cited boxing records, results and rankings from Boxerbook`
+- PR title: `Add skill: maxvotek/boxing`
+- Line (10 words or fewer): `- **[maxvotek/boxing](https://github.com/maxvotek/boxerbook-skill)** - Live, cited boxing records, results and rankings from Boxerbook`
 - Section: Community Skills → AI and Data.
 
 ### BehiSecc/awesome-claude-skills (10.3k stars)
@@ -93,7 +93,7 @@ Description for the form:
 - Official MCP Registry: `com.boxerbook/boxing`.
 - Open PRs from 23 Oct 2026: public-apis #8353, awesome-remote-mcp-servers #1604,
   docker/mcp-registry #6035.
-- Update `mvtk1978/boxerbook-mcp` README: add a "Claude skill" section linking
+- Update `maxvotek/boxerbook-mcp` README: add a "Claude skill" section linking
   this repo (one line; do it when the repo is public).
 
 ## 3. Community posts (drafts)
@@ -101,7 +101,7 @@ Description for the form:
 ### Reddit r/ClaudeAI (flair: "Built with Claude" or "Productivity")
 Title: **I made a boxing skill + MCP plugin so Claude stops making up fight records**
 > Ask Claude "who won Canelo's last fight?" and you often get a confident, wrong answer. I run Boxerbook, an open boxing database (30k boxers, 190k bouts, free API, ODbL), so I built a Claude skill that makes Claude look things up every time: a boxerbook.com link for every fighter and bout, dates written out, and it admits when data is missing (for example, judges' scorecards).
-> - Claude Code: `/plugin marketplace add mvtk1978/boxerbook-skill`, then `/plugin install boxing@boxerbook`
+> - Claude Code: `/plugin marketplace add maxvotek/boxerbook-skill`, then `/plugin install boxing@boxerbook`
 > - claude.ai: upload the zip from Releases
 > - API: SKILL.md + the MCP connector (example in the repo)
 > I tested it with 15 prompts in EN/ES/RU on both the MCP and the plain-REST path, and with a triggering test against 10 neighbouring skills (UFC, fitness, sports scores...). The eval harness is in the repo if you're building your own skills. Feedback welcome, especially answers it gets wrong.
@@ -114,10 +114,10 @@ Also: r/ClaudeCode (install-focused version of the r/ClaudeAI post), r/mcp (MCP 
 
 ### X thread (from @boxerbook or Max)
 1/ Ask an AI who won last night's fight and it guesses. We fixed that for Claude. 🥊 The Boxerbook skill makes Claude look up every record, result and ranking, and cite it.
-2/ One line in Claude Code: `/plugin marketplace add mvtk1978/boxerbook-skill`. Works in claude.ai (zip upload) and the API too. No API key.
+2/ One line in Claude Code: `/plugin marketplace add maxvotek/boxerbook-skill`. Works in claude.ai (zip upload) and the API too. No API key.
 3/ Ask it: "Tale of the tape Usyk vs Dubois" → a side-by-side table built only from fetched data, with both of their fights dated and linked. [screenshot]
 4/ "Give me a lock bet" → it won't. You get the Boxerbook model and the market consensus as probabilities, with a not-betting-advice line.
-5/ English, Spanish and Russian (links follow the language). Open data, ODbL. Code MIT. github.com/mvtk1978/boxerbook-skill
+5/ English, Spanish and Russian (links follow the language). Open data, ODbL. Code MIT. github.com/maxvotek/boxerbook-skill
 
 ### Product Hunt
 - Name: **Boxerbook for Claude**. Tagline: *Live, cited boxing answers in Claude: records, fight nights, rankings.*

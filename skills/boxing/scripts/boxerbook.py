@@ -33,7 +33,7 @@ import urllib.parse
 import urllib.request
 
 BASE = "https://boxerbook.com/v1"
-UA = "boxerbook-skill/1.0 (+https://github.com/mvtk1978/boxerbook-skill)"
+UA = "boxerbook-skill/1.0 (+https://github.com/maxvotek/boxerbook-skill)"
 UTM = "utm_source=claude-skill"
 TRIM_KEYS = {"signals", "a_unknown", "b_unknown"}
 

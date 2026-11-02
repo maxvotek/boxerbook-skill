@@ -8,7 +8,7 @@
     "url": "https://boxerbook.com/?utm_source=claude-skill"
   },
   "homepage": "https://boxerbook.com/developers?utm_source=claude-skill",
-  "repository": "https://github.com/mvtk1978/boxerbook-skill",
+  "repository": "https://github.com/maxvotek/boxerbook-skill",
   "license": "MIT",
   "keywords": ["boxing", "sports", "boxerbook", "mcp", "rankings", "fight-night", "sports-data"]
 }
