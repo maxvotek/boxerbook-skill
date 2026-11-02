@@ -173,6 +173,12 @@ with a not-betting-advice line); answer in the user's language.
 Boxerbook documents that start_utc is the start of the whole card (main events start later), so
 saying "the card starts at X UTC, the main event later" is grounded. Values derived from tool fields
 (age from birth date, inches from cm, side b probability = 1 - p_a, percentages) count as grounded.
+Records attached to a bout (a.record, b.record, record, opponent_record) are, per Boxerbook's
+documentation, the W-L-D going INTO that bout, so "X came in 29-0-1, his first loss" is grounded.
+The skill itself tells the assistant that main events usually start 2-4 hours after the card start;
+that general statement is allowed. The current date is in the assistant's system prompt and tool outputs carry as_of, so 'as of <today>' is grounded. Country codes may be written as country names (GB -> UK/Great Britain).
+In Russian, "супертяжёлый вес" is the standard name of the professional heavyweight division.
+If a tool output is cut off and you cannot verify a fact, do not mark it ungrounded for that alone.
 
 USER PROMPT ({lang}):
 {prompt}
@@ -209,7 +215,7 @@ def judge(case, answer, trace):
     tools_txt = []
     for t in trace:
         if t["type"] == "tool" and t["name"] != "read_file":
-            tools_txt.append(f"- {t['name']}({json.dumps(t['input'], ensure_ascii=False)}) ->\n{t['output'][:25000]}")
+            tools_txt.append(f"- {t['name']}({json.dumps(t['input'], ensure_ascii=False)}) ->\n{t['output'][:60000]}")
     prompt = JUDGE_PROMPT.format(lang=case["lang"], prompt=case["prompt"], expect=case["expect"],
                                  tools="\n".join(tools_txt) or "(no tool calls)", answer=answer)
     resp = client.messages.create(model=JUDGE, max_tokens=4000,

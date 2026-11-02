@@ -45,58 +45,31 @@ No boxer matches.
 
 ```
 
-**tool** `search_boxers` `{"q": "Vorhonen"}`
-
-```
-Source: [Boxerbook](https://boxerbook.com/search?q=Vorhonen)
-
-Boxers matching "Vorhonen", best first: 0.
-
-No boxer matches.
-
-```
-
 **tool** `boxer` `{"query": "d-mitrius-ballard-q51119912"}`
 
 ```
 Source: [Boxerbook](https://boxerbook.com/boxers/d-mitrius-ballard-q51119912)
 
-{"cite":"Source: [Boxerbook](https://boxerbook.com/boxers/d-mitrius-ballard-q51119912)","id":12914,"slug":"d-mitrius-ballard-q51119912","name":"D’Mitrius Ballard","country":null,"sex":"male","division":"mid","record":null,"record_source":null,"bouts_without_result":null,"stance":null,"height_cm":null,"reach_cm":null,"birth_date":"1983","nickname":null,"next_fight":null,"last_result":{"bout_id":79928,"date":"2023-06-10","opponent":{"id":2948,"name":"Shane Mosley Jr","slug":"shane-mosley-jr-q127271293"},"result":"L","method":"KO","round":7,"url":"https://boxerbook.com/bouts/79928/d-mitrius-ballard-vs-shane-mosley-jr"},"rating":{"mu":1693.3,"rd":211.8,"division_rank":null,"confidence":0.8},"url":"https://boxerbook.com/boxers/d-mitrius-ballard-q51119912","attribution":{"source":"Boxerbook","license":"ODbL","url":"https://boxerbook.com/boxers/d-mitrius-ballard-q51119912"},"as_of":"2026-11-02T04:36:36Z"}
+{"cite":"Source: [Boxerbook](https://boxerbook.com/boxers/d-mitrius-ballard-q51119912)","id":12914,"slug":"d-mitrius-ballard-q51119912","name":"D’Mitrius Ballard","country":null,"sex":"male","division":"mid","record":null,"record_source":null,"bouts_without_result":null,"stance":null,"height_cm":null,"reach_cm":null,"birth_date":"1983","nickname":null,"next_fight":null,"last_result":{"bout_id":79928,"date":"2023-06-10","opponent":{"id":2948,"name":"Shane Mosley Jr","slug":"shane-mosley-jr-q127271293"},"result":"L","method":"KO","round":7,"url":"https://boxerbook.com/bouts/79928/d-mitrius-ballard-vs-shane-mosley-jr"},"rating":{"mu":1693.3,"rd":211.8,"division_rank":null,"confidence":0.8},"url":"https://boxerbook.com/boxers/d-mitrius-ballard-q51119912","attribution":{"source":"Boxerbook","license":"ODbL","url":"https://boxerbook.com/boxers/d-mitrius-ballard-q51119912"},"as_of":"2026-11-02T05:09:34Z"}
 ```
 
 **assistant (interim)**
 
-I couldn't find a boxer named **Dmitrius Vorkhonen** in Boxerbook, so I can't give you a record. I don't want to guess or make one up.
+I couldn't find a boxer called **Dmitrius Vorkhonen** in Boxerbook. I searched the full name, the surname "Vorkhonen" and the shorter "Vorkh", and none of them matched. So I can't give you a record. I'm also not going to guess one, because the name may be spelled differently or the boxer may not be in the database.
 
-**What I searched:**
-- The full name "Dmitrius Vorkhonen": no match
-- Surname spellings "Vorkhonen," "Vorhonen" and "Vorkh": no matches
-- First name "Dmitrius": one result, but it isn't your boxer. [D'Mitrius Ballard](https://boxerbook.com/boxers/d-mitrius-ballard-q51119912?utm_source=claude-skill) is listed as a middleweight. His latest bout in Boxerbook was a 7th-round KO loss to Shane Mosley Jr on 10 June 2023. Boxerbook has no total record for him.
+The only similar name is **[D'Mitrius Ballard](https://boxerbook.com/boxers/d-mitrius-ballard-q51119912?utm_source=claude-skill)**. He's probably not who you mean, because Boxerbook lists him as a middleweight, not a heavyweight. It also has no full win-loss record for him. His last fight on record was a KO loss in round 7 to Shane Mosley Jr on 10 June 2023 ([bout page](https://boxerbook.com/bouts/79928/d-mitrius-ballard-vs-shane-mosley-jr?utm_source=claude-skill)).
 
-**Possible reasons:**
-- The name may be transliterated differently. Russian and Finnish names are often spelled several ways, for example Dmitry, Dmitriy, Dimitri, or a different ending on the surname.
-- The boxer may not be in Boxerbook yet.
-- The name might be slightly off from the one you heard.
-
-If you have another spelling, his country, or an opponent he fought, send it and I'll search again.
+If you can tell me another spelling (for example Dmitry, Dmitriy or Dimitrios, or a different surname) or the boxer's country, I'll search again.
 
 Source: [Boxerbook](https://boxerbook.com/search?q=Vorkhonen&utm_source=claude-skill)
 
 ## Final answer
 
-I couldn't find a boxer named **Dmitrius Vorkhonen** in Boxerbook, so I can't give you a record. I don't want to guess or make one up.
+I couldn't find a boxer called **Dmitrius Vorkhonen** in Boxerbook. I searched the full name, the surname "Vorkhonen" and the shorter "Vorkh", and none of them matched. So I can't give you a record. I'm also not going to guess one, because the name may be spelled differently or the boxer may not be in the database.
 
-**What I searched:**
-- The full name "Dmitrius Vorkhonen": no match
-- Surname spellings "Vorkhonen," "Vorhonen" and "Vorkh": no matches
-- First name "Dmitrius": one result, but it isn't your boxer. [D'Mitrius Ballard](https://boxerbook.com/boxers/d-mitrius-ballard-q51119912?utm_source=claude-skill) is listed as a middleweight. His latest bout in Boxerbook was a 7th-round KO loss to Shane Mosley Jr on 10 June 2023. Boxerbook has no total record for him.
+The only similar name is **[D'Mitrius Ballard](https://boxerbook.com/boxers/d-mitrius-ballard-q51119912?utm_source=claude-skill)**. He's probably not who you mean, because Boxerbook lists him as a middleweight, not a heavyweight. It also has no full win-loss record for him. His last fight on record was a KO loss in round 7 to Shane Mosley Jr on 10 June 2023 ([bout page](https://boxerbook.com/bouts/79928/d-mitrius-ballard-vs-shane-mosley-jr?utm_source=claude-skill)).
 
-**Possible reasons:**
-- The name may be transliterated differently. Russian and Finnish names are often spelled several ways, for example Dmitry, Dmitriy, Dimitri, or a different ending on the surname.
-- The boxer may not be in Boxerbook yet.
-- The name might be slightly off from the one you heard.
-
-If you have another spelling, his country, or an opponent he fought, send it and I'll search again.
+If you can tell me another spelling (for example Dmitry, Dmitriy or Dimitrios, or a different surname) or the boxer's country, I'll search again.
 
 Source: [Boxerbook](https://boxerbook.com/search?q=Vorkhonen&utm_source=claude-skill)
 
@@ -111,7 +84,7 @@ Source: [Boxerbook](https://boxerbook.com/search?q=Vorkhonen&utm_source=claude-s
     "no_betting_tips": true,
     "language": true,
     "task": true,
-    "notes": "The answer says plainly that no boxer was found and invents no record. Every detail about D'Mitrius Ballard (middleweight, 7th-round KO loss to Shane Mosley Jr on 10 June 2023, no total record) matches the tool results. The suggested alternate spellings are general knowledge, not Boxerbook facts. The links point to boxerbook.com and the date is explicit."
+    "notes": "The answer says plainly that no such boxer was found and invents no record. Ballard's details (middleweight, no record, KO loss in round 7 to Shane Mosley Jr on 2023-06-10) match the tool output. Links go to boxerbook.com, and the spelling suggestions are reasonable."
   },
   "checks": {
     "used_data_tool": true,
@@ -120,6 +93,6 @@ Source: [Boxerbook](https://boxerbook.com/search?q=Vorkhonen&utm_source=claude-s
     "utm_tagged": true,
     "read_reference": false
   },
-  "usd": 0.0389
+  "usd": 0.0552
 }
 ```

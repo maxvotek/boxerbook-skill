@@ -28,7 +28,7 @@ Welterweight rankings: RING (2026-09-15).
 
 **assistant (interim)**
 
-Este es el **ranking de peso wélter de The Ring** en Boxerbook, según la lista del **15 de septiembre de 2026**:
+Este es el **ranking wélter de The Ring**, con fecha del **15 de septiembre de 2026**:
 
 | # | Boxeador |
 |---|---|
@@ -36,20 +36,20 @@ Este es el **ranking de peso wélter de The Ring** en Boxerbook, según la lista
 | 2 | [Ryan Garcia](https://boxerbook.com/es/boxeadores/ryan-garcia-q47452754?utm_source=claude-skill) |
 | 3 | [Teofimo Lopez](https://boxerbook.com/es/boxeadores/teofimo-lopez-q26250597?utm_source=claude-skill) |
 | 4 | [Jack Catterall](https://boxerbook.com/es/boxeadores/jack-catterall-q72758998?utm_source=claude-skill) |
-| 5 | [Brian Norman Jr.](https://boxerbook.com/es/boxeadores/brian-norman-jr-q125975589?utm_source=claude-skill) |
+| 5 | [Brian Norman](https://boxerbook.com/es/boxeadores/brian-norman-jr-q125975589?utm_source=claude-skill) |
 | 6 | [Eimantas Stanionis](https://boxerbook.com/es/boxeadores/eimantas-stanionis-q20893948?utm_source=claude-skill) |
 | 7 | [Rohan Polanco](https://boxerbook.com/es/boxeadores/rohan-polanco-q107956576?utm_source=claude-skill) |
-| 8 | [Raúl Curiel](https://boxerbook.com/es/boxeadores/raul-curiel-garcia-q27048913?utm_source=claude-skill) |
+| 8 | [Raul Curiel](https://boxerbook.com/es/boxeadores/raul-curiel-garcia-q27048913?utm_source=claude-skill) |
 | 9 | [Alexis Rocha](https://boxerbook.com/es/boxeadores/alexis-rocha-b20793?utm_source=claude-skill) |
 | 10 | [Rolando Romero](https://boxerbook.com/es/boxeadores/rolando-romero-q98428784?utm_source=claude-skill) |
 
-La lista solo muestra los puestos del 1 al 10. No indica si hay un campeón de The Ring y tampoco trae los récords. Las peleas posteriores al 15 de septiembre de 2026 no están reflejadas. Si quieres, te busco el récord o la próxima pelea de cualquiera de ellos.
+Boxerbook solo tiene estos 10 puestos de la lista. Tampoco indica si hay un campeón de The Ring ni los récords de cada uno. Si quieres, te busco el récord de cualquiera de ellos o te muestro el ranking del CMB, AMB, FIB u OMB.
 
 Fuente: [Boxerbook](https://boxerbook.com/es/ranking/welter?list=ring&utm_source=claude-skill)
 
 ## Final answer
 
-Este es el **ranking de peso wélter de The Ring** en Boxerbook, según la lista del **15 de septiembre de 2026**:
+Este es el **ranking wélter de The Ring**, con fecha del **15 de septiembre de 2026**:
 
 | # | Boxeador |
 |---|---|
@@ -57,14 +57,14 @@ Este es el **ranking de peso wélter de The Ring** en Boxerbook, según la lista
 | 2 | [Ryan Garcia](https://boxerbook.com/es/boxeadores/ryan-garcia-q47452754?utm_source=claude-skill) |
 | 3 | [Teofimo Lopez](https://boxerbook.com/es/boxeadores/teofimo-lopez-q26250597?utm_source=claude-skill) |
 | 4 | [Jack Catterall](https://boxerbook.com/es/boxeadores/jack-catterall-q72758998?utm_source=claude-skill) |
-| 5 | [Brian Norman Jr.](https://boxerbook.com/es/boxeadores/brian-norman-jr-q125975589?utm_source=claude-skill) |
+| 5 | [Brian Norman](https://boxerbook.com/es/boxeadores/brian-norman-jr-q125975589?utm_source=claude-skill) |
 | 6 | [Eimantas Stanionis](https://boxerbook.com/es/boxeadores/eimantas-stanionis-q20893948?utm_source=claude-skill) |
 | 7 | [Rohan Polanco](https://boxerbook.com/es/boxeadores/rohan-polanco-q107956576?utm_source=claude-skill) |
-| 8 | [Raúl Curiel](https://boxerbook.com/es/boxeadores/raul-curiel-garcia-q27048913?utm_source=claude-skill) |
+| 8 | [Raul Curiel](https://boxerbook.com/es/boxeadores/raul-curiel-garcia-q27048913?utm_source=claude-skill) |
 | 9 | [Alexis Rocha](https://boxerbook.com/es/boxeadores/alexis-rocha-b20793?utm_source=claude-skill) |
 | 10 | [Rolando Romero](https://boxerbook.com/es/boxeadores/rolando-romero-q98428784?utm_source=claude-skill) |
 
-La lista solo muestra los puestos del 1 al 10. No indica si hay un campeón de The Ring y tampoco trae los récords. Las peleas posteriores al 15 de septiembre de 2026 no están reflejadas. Si quieres, te busco el récord o la próxima pelea de cualquiera de ellos.
+Boxerbook solo tiene estos 10 puestos de la lista. Tampoco indica si hay un campeón de The Ring ni los récords de cada uno. Si quieres, te busco el récord de cualquiera de ellos o te muestro el ranking del CMB, AMB, FIB u OMB.
 
 Fuente: [Boxerbook](https://boxerbook.com/es/ranking/welter?list=ring&utm_source=claude-skill)
 
@@ -79,7 +79,7 @@ Fuente: [Boxerbook](https://boxerbook.com/es/ranking/welter?list=ring&utm_source
     "no_betting_tips": true,
     "language": true,
     "task": true,
-    "notes": "The ranking, the list date (15 Sep 2026) and the links all match the tool output. The answer notes that no champion is listed and that there are no records. The utm_source parameter added to the URLs is harmless. The names 'Brian Norman Jr.' and 'Raúl' are only cosmetic adjustments."
+    "notes": "The ranking positions, names, list date (15 Sept 2026) and links match the tool output. The statement that Boxerbook doesn't indicate a Ring champion is consistent with the list, which shows only 10 positions and no champion marker. The answer is in Spanish and credits Boxerbook, and it says the champion info is absent rather than inventing it."
   },
   "checks": {
     "used_data_tool": true,
@@ -88,6 +88,6 @@ Fuente: [Boxerbook](https://boxerbook.com/es/ranking/welter?list=ring&utm_source
     "utm_tagged": true,
     "read_reference": false
   },
-  "usd": 0.0255
+  "usd": 0.0252
 }
 ```

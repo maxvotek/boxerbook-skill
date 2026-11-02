@@ -17,40 +17,6 @@ No completed bouts on record in this window.
 
 ```
 
-**tool** `read_file` `{"path": "references/api.md"}`
-
-```
-# Boxerbook data access: MCP tools and REST API
-
-Two doors to the same data. Use the MCP tools when they are connected (tool
-names `boxing_schedule`, `boxer`, `bout` … possibly prefixed, e.g.
-`mcp__plugin_boxing_boxerbook__boxer`). Otherwise use the REST API, through
-`scripts/boxerbook.py` when you can run code, or by fetching the URLs directly.
-
-## Contents
-1. MCP server (tools, arguments, what each answers)
-2. REST API (endpoints, parameters)
-3. The helper script
-4. Fields and how to read them
-5. Gotchas
-
-## 1. MCP server
-
-Endpoint `https://mcp.boxerbook.com/mcp` (also `https://boxerbook.com/mcp`),
-Streamable HTTP, stateless, no auth, 300 calls/min per IP. Every tool takes
-`lang` (`en` | `es` | `ru` | `ja`): pass the user's language so the
-boxerbook.com links in the answer are localized (`/es/boxeadores/...`,
-`/ru/boksery/...`). Every answer carries `cite` (a ready markdown link) and `url`.
-
-| Tool | Arguments | Use it for |
-|---|---|---|
-| `search` | `query` (a boxer, "A vs B", a division) | anything, when unsure which tool; returns document ids + urls |
-| `fetch` | `id` = `boxer:<id>`, `bout:<id>`, `event:<id>`, `rankings:<DIV>` | the full document behind a search hit, as Markdown |
-| `search_boxers` | `q` | name ambiguity: up to 20 boxers sharing a name/spelling, with country, division, record |
-| `boxer` | `query` (name, slug or id) | a boxer's card: record (W-L-D, KOs), division, stance, height, reach, birth year, nickname, next fight, last result, rating, record as fa
-... [9463 chars]
-```
-
 **tool** `boxing_results` `{"days": 4, "lang": "es"}`
 
 ```
@@ -68,43 +34,43 @@ Boxing results (last 4 days), 2026-10-30 to 2026-11-02: 16 bouts, newest first. 
 
 **assistant (interim)**
 
-Anoche (domingo 1 de noviembre de 2026) no hubo peleas, o al menos Boxerbook no tiene ninguna registrada entre el 1 y el 2 de noviembre. La última gran noche fue el **sábado 31 de octubre de 2026**, y el combate estelar lo ganó **Canelo Álvarez**: venció por decisión unánime a Christian M'billi y se quedó con el título supermediano del CMB.
+Boxerbook no tiene combates registrados para anoche, domingo 1 de noviembre de 2026. Las peleas más recientes fueron el **sábado 31 de octubre de 2026**, y la principal la ganó **Canelo Álvarez**: venció a Christian M'billi por decisión unánime en 12 asaltos, por el título súper mediano del CMB.
 
-**Peleas principales del 31 de octubre de 2026**
+**Principales resultados del 31 oct 2026**
 
-| Ganador | Perdedor | Método | Título |
+| Ganador | Rival | Resultado | Peso / título |
 |---|---|---|---|
-| [Canelo Álvarez](https://boxerbook.com/es/peleas/192134/christian-m-billi-vs-canelo-alvarez?utm_source=claude-skill) (63-3-2) | Christian M'billi (29-0-1) | Decisión unánime a 12 asaltos | Supermediano CMB |
-| [Jaime Munguía](https://boxerbook.com/es/peleas/192135/jaime-munguia-vs-nikita-zon?utm_source=claude-skill) (46-2-0) | Nikita Zon (10-0-1) | Decisión unánime a 12 asaltos | Supermediano AMB |
-| [Rafael Espinoza](https://boxerbook.com/es/peleas/193239/ricardo-blandon-vs-rafael-espinoza?utm_source=claude-skill) (28-0-0) | Ricardo Blandón (21-6-0) | KO técnico en el 3.º asalto (1:22) | Pluma OMB |
-| [Carl Jammes Martin](https://boxerbook.com/es/peleas/192138/alan-picasso-romero-vs-carl-jammes-martin?utm_source=claude-skill) (28-0-0) | Alan Picasso Romero (33-1-1) | Decisión dividida a 10 asaltos | Pluma Plata CMB |
-| [Bek Nurmaganbet](https://boxerbook.com/es/peleas/193238/bek-nurmaganbet-vs-marcos-vazquez?utm_source=claude-skill) (15-0-0) | Marcos Vázquez (0-2-0) | KO en el 1.er asalto (2:57) | — |
-| [Reito Tsutsumi](https://boxerbook.com/es/peleas/192139/raymundo-rojas-garcia-vs-reito-tsutsumi?utm_source=claude-skill) (5-0-0) | Raymundo Rojas García | KO técnico en el 2.º asalto (2:27) | — |
+| [Canelo Álvarez](https://boxerbook.com/es/peleas/192134/christian-m-billi-vs-canelo-alvarez?utm_source=claude-skill) (63-3-2) | Christian M'billi (29-0-1) | Decisión unánime, 12 asaltos | Súper mediano, título del CMB |
+| [Jaime Munguía](https://boxerbook.com/es/peleas/192135/jaime-munguia-vs-nikita-zon?utm_source=claude-skill) (46-2-0) | Nikita Zon (10-0-1) | Decisión unánime, 12 asaltos | Súper mediano, título de la AMB |
+| [Rafael Espinoza](https://boxerbook.com/es/peleas/193239/ricardo-blandon-vs-rafael-espinoza?utm_source=claude-skill) (28-0-0) | Ricardo Blandón (21-6-0) | Nocaut técnico en el 3.º asalto (1:22) | Pluma, título de la OMB |
+| [Carl Jammes Martin](https://boxerbook.com/es/peleas/192138/alan-picasso-romero-vs-carl-jammes-martin?utm_source=claude-skill) (28-0-0) | Alan Picasso Romero (33-1-1) | Decisión dividida, 10 asaltos | Pluma, título Silver del CMB |
+| [Bek Nurmaganbet](https://boxerbook.com/es/peleas/193238/bek-nurmaganbet-vs-marcos-vazquez?utm_source=claude-skill) (15-0-0) | Marcos Vázquez (0-2-0) | Nocaut en el 1.er asalto (2:57) | Súper mediano |
+| [Reito Tsutsumi](https://boxerbook.com/es/peleas/192139/raymundo-rojas-garcia-vs-reito-tsutsumi?utm_source=claude-skill) (5-0-0) | Raymundo Rojas García | Nocaut técnico en el 2.º asalto (2:27) | Pluma |
 
-Los récords son los que tenía cada boxeador antes de la pelea, no los actuales.
+*Los récords son los que tenían **antes** de la pelea, no los actuales.*
 
-Esa noche también hubo varias peleas por títulos regionales de la AMB (Fedelatin y Asia). Si te interesan, te las detallo.
+Ese día hubo otros combates, entre ellos varios por títulos regionales de la AMB (Fedelatin, Asia). Puedes ver la lista completa en la página de resultados.
 
 Fuente: [Boxerbook](https://boxerbook.com/es/resultados?utm_source=claude-skill)
 
 ## Final answer
 
-Anoche (domingo 1 de noviembre de 2026) no hubo peleas, o al menos Boxerbook no tiene ninguna registrada entre el 1 y el 2 de noviembre. La última gran noche fue el **sábado 31 de octubre de 2026**, y el combate estelar lo ganó **Canelo Álvarez**: venció por decisión unánime a Christian M'billi y se quedó con el título supermediano del CMB.
+Boxerbook no tiene combates registrados para anoche, domingo 1 de noviembre de 2026. Las peleas más recientes fueron el **sábado 31 de octubre de 2026**, y la principal la ganó **Canelo Álvarez**: venció a Christian M'billi por decisión unánime en 12 asaltos, por el título súper mediano del CMB.
 
-**Peleas principales del 31 de octubre de 2026**
+**Principales resultados del 31 oct 2026**
 
-| Ganador | Perdedor | Método | Título |
+| Ganador | Rival | Resultado | Peso / título |
 |---|---|---|---|
-| [Canelo Álvarez](https://boxerbook.com/es/peleas/192134/christian-m-billi-vs-canelo-alvarez?utm_source=claude-skill) (63-3-2) | Christian M'billi (29-0-1) | Decisión unánime a 12 asaltos | Supermediano CMB |
-| [Jaime Munguía](https://boxerbook.com/es/peleas/192135/jaime-munguia-vs-nikita-zon?utm_source=claude-skill) (46-2-0) | Nikita Zon (10-0-1) | Decisión unánime a 12 asaltos | Supermediano AMB |
-| [Rafael Espinoza](https://boxerbook.com/es/peleas/193239/ricardo-blandon-vs-rafael-espinoza?utm_source=claude-skill) (28-0-0) | Ricardo Blandón (21-6-0) | KO técnico en el 3.º asalto (1:22) | Pluma OMB |
-| [Carl Jammes Martin](https://boxerbook.com/es/peleas/192138/alan-picasso-romero-vs-carl-jammes-martin?utm_source=claude-skill) (28-0-0) | Alan Picasso Romero (33-1-1) | Decisión dividida a 10 asaltos | Pluma Plata CMB |
-| [Bek Nurmaganbet](https://boxerbook.com/es/peleas/193238/bek-nurmaganbet-vs-marcos-vazquez?utm_source=claude-skill) (15-0-0) | Marcos Vázquez (0-2-0) | KO en el 1.er asalto (2:57) | — |
-| [Reito Tsutsumi](https://boxerbook.com/es/peleas/192139/raymundo-rojas-garcia-vs-reito-tsutsumi?utm_source=claude-skill) (5-0-0) | Raymundo Rojas García | KO técnico en el 2.º asalto (2:27) | — |
+| [Canelo Álvarez](https://boxerbook.com/es/peleas/192134/christian-m-billi-vs-canelo-alvarez?utm_source=claude-skill) (63-3-2) | Christian M'billi (29-0-1) | Decisión unánime, 12 asaltos | Súper mediano, título del CMB |
+| [Jaime Munguía](https://boxerbook.com/es/peleas/192135/jaime-munguia-vs-nikita-zon?utm_source=claude-skill) (46-2-0) | Nikita Zon (10-0-1) | Decisión unánime, 12 asaltos | Súper mediano, título de la AMB |
+| [Rafael Espinoza](https://boxerbook.com/es/peleas/193239/ricardo-blandon-vs-rafael-espinoza?utm_source=claude-skill) (28-0-0) | Ricardo Blandón (21-6-0) | Nocaut técnico en el 3.º asalto (1:22) | Pluma, título de la OMB |
+| [Carl Jammes Martin](https://boxerbook.com/es/peleas/192138/alan-picasso-romero-vs-carl-jammes-martin?utm_source=claude-skill) (28-0-0) | Alan Picasso Romero (33-1-1) | Decisión dividida, 10 asaltos | Pluma, título Silver del CMB |
+| [Bek Nurmaganbet](https://boxerbook.com/es/peleas/193238/bek-nurmaganbet-vs-marcos-vazquez?utm_source=claude-skill) (15-0-0) | Marcos Vázquez (0-2-0) | Nocaut en el 1.er asalto (2:57) | Súper mediano |
+| [Reito Tsutsumi](https://boxerbook.com/es/peleas/192139/raymundo-rojas-garcia-vs-reito-tsutsumi?utm_source=claude-skill) (5-0-0) | Raymundo Rojas García | Nocaut técnico en el 2.º asalto (2:27) | Pluma |
 
-Los récords son los que tenía cada boxeador antes de la pelea, no los actuales.
+*Los récords son los que tenían **antes** de la pelea, no los actuales.*
 
-Esa noche también hubo varias peleas por títulos regionales de la AMB (Fedelatin y Asia). Si te interesan, te las detallo.
+Ese día hubo otros combates, entre ellos varios por títulos regionales de la AMB (Fedelatin, Asia). Puedes ver la lista completa en la página de resultados.
 
 Fuente: [Boxerbook](https://boxerbook.com/es/resultados?utm_source=claude-skill)
 
@@ -119,15 +85,15 @@ Fuente: [Boxerbook](https://boxerbook.com/es/resultados?utm_source=claude-skill)
     "no_betting_tips": true,
     "language": true,
     "task": true,
-    "notes": "Correctly reports no bouts for 1-2 Nov and gives the 31 Oct results from the tool output, with links and dates. The 'estelar' label and the weekday names are mild inferences but are correct."
+    "notes": "Correctly says no results for last night (Nov 1, 2026) and reports the Oct 31 results accurately, with links, explicit dates, and a note that records are pre-bout."
   },
   "checks": {
     "used_data_tool": true,
     "has_boxerbook_link": true,
     "lang_heuristic": true,
     "utm_tagged": true,
-    "read_reference": true
+    "read_reference": false
   },
-  "usd": 0.0797
+  "usd": 0.0426
 }
 ```

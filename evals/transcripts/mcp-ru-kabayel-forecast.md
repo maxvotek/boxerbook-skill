@@ -17,42 +17,45 @@ Source: [Boxerbook](https://boxerbook.com/ru/boi/192171/agit-kabayel-vs-nelson-h
 
 **assistant (interim)**
 
-Boxerbook даёт победу **Агиту Кабайелу примерно в 92%**. Букмекеры оценивают его шансы похоже: около 89%.
+Boxerbook даёт **Агиту Кабайелу около 92%** на победу над **Нельсоном Хысой**. Букмекеры тоже видят его явным фаворитом.
 
-**[Агит Кабайел — Нельсон Хыса](https://boxerbook.com/ru/boi/192171/agit-kabayel-vs-nelson-hysa?utm_source=claude-skill)**: 28 ноября 2026, Дюссельдорф (Германия), 12 раундов, на кону титул WBC в супертяжёлом весе. Вечер начинается в 21:00 UTC, главный бой будет позже. Пока бой подтверждает только один источник.
+**[Агит Кабайел — Нельсон Хыса](https://boxerbook.com/ru/boi/192171/agit-kabayel-vs-nelson-hysa?utm_source=claude-skill)**
+- **Дата:** 28 ноября 2026, Дюссельдорф, Германия. Вечер начинается в 21:00 UTC. Это время начала всего вечера, а не главного боя.
+- **Бой:** 12 раундов, на кону титул «WBC heavyweight title».
+- **Статус:** у Boxerbook бой отмечен как подтверждённый одним источником (single_source).
 
 **Вероятности**
 
 | | Кабайел | Хыса |
 |---|---|---|
-| Прогноз Boxerbook (на 26 октября 2026) | 91,8% | 8,2% |
-| Букмекеры (13 контор, 2 ноября 2026) | 89,3% | 10,7% |
-| Букмекеры при открытии линии (20 октября 2026) | 89,8% | 10,2% |
+| Прогноз Boxerbook (от 26.10.2026) | **91,8%** | 8,2% |
+| Консенсус 13 букмекеров (на 02.11.2026) | **89,3%** | 10,7% |
+| Букмекеры при открытии линии (20.10.2026) | 89,8% | 10,2% |
 
-**Сравнение бойцов (записи перед боем)**
+**Данные модели**
 
 | | [Кабайел](https://boxerbook.com/ru/boksery/agit-kabayel-q28864444?utm_source=claude-skill) | [Хыса](https://boxerbook.com/ru/boksery/nelson-hysa-q20029125?utm_source=claude-skill) |
 |---|---|---|
-| Рекорд | 31-0-0 | 26-0-0 |
-| Доля нокаутов | 68% | 92% |
-| Возраст | 34 | 42 |
-| Размах рук | 203 см | 200,5 см |
+| Рекорд перед боем | 31-0-0 | 26-0-0 |
+| Доля побед нокаутом | 68% | 92% |
+| Последние 5 боёв | WWWWW | WWWWW |
+| Возраст | 34 года | 42 года |
+| Размах рук | 203 см (≈80") | 200,5 см (≈79") |
+| Рейтинг Boxerbook | 2383 (+56 за 12 мес.) | 2063 (+10 за 12 мес.) |
+| Перерыв без боёв | 322 дня | 91 день |
 | Стойка | правосторонняя | правосторонняя |
-| Рейтинг Boxerbook | ~2383 (+56 за 12 месяцев) | ~2063 (+10 за 12 месяцев) |
-| Последние 5 боёв | 5 побед | 5 побед |
-| Дней без боёв | 322 | 91 |
+| Дома или на выезде | дома | на выезде |
 
-**Почему фаворит Кабайел**
-- **Рейтинг.** У него рейтинг выше примерно на 320 пунктов. Только по рейтингу его шансы около 83%.
-- **Соперники.** Он бил сильных: 10 января 2026 — [Дамиан Кныба](https://boxerbook.com/ru/boi/9920/agit-kabayel-vs-damian-knyba?utm_source=claude-skill) (TKO, 3-й раунд), 22 февраля 2025 — [Чжан Чжилэй](https://boxerbook.com/ru/boi/32613/agit-kabayel-vs-zhang-zhilei?utm_source=claude-skill) (KO, 6-й раунд), 18 мая 2024 — [Франк Санчес](https://boxerbook.com/ru/boi/32614/agit-kabayel-vs-frank-sanchez?utm_source=claude-skill) (KO, 7-й раунд).
-- **Дома.** Бой пройдёт в Германии.
+**Последние бои**
+- **Кабайел:** победил техническим нокаутом Дамиана Кныбу в 3-м раунде ([10.01.2026](https://boxerbook.com/ru/boi/9920/agit-kabayel-vs-damian-knyba?utm_source=claude-skill)), нокаутом Чжана Чжилэя в 6-м раунде ([22.02.2025](https://boxerbook.com/ru/boi/32613/agit-kabayel-vs-zhang-zhilei?utm_source=claude-skill)) и нокаутом Франка Санчеса в 7-м раунде ([18.05.2024](https://boxerbook.com/ru/boi/32614/agit-kabayel-vs-frank-sanchez?utm_source=claude-skill)).
+- **Хыса:** победил техническим нокаутом Томаса Нармо во 2-м раунде ([29.08.2026](https://boxerbook.com/ru/boi/23826/thomas-narmo-vs-nelson-hysa?utm_source=claude-skill)), Абеля Песута в 4-м раунде ([09.10.2025](https://boxerbook.com/ru/boi/23827/abel-pesut-vs-nelson-hysa?utm_source=claude-skill)) и Патрика Корте во 2-м раунде ([07.06.2025](https://boxerbook.com/ru/boi/23828/patrick-korte-vs-nelson-hysa?utm_source=claude-skill)).
 
-**Шансы Хысы**
-- **Нокаутирующий удар и форма.** Он нокаутирует почти всех соперников. Последние три боя выиграл досрочно: 29 августа 2026 — [Томас Нармо](https://boxerbook.com/ru/boi/23826/thomas-narmo-vs-nelson-hysa?utm_source=claude-skill) (TKO, 2-й раунд), 9 октября 2025 — [Абель Песут](https://boxerbook.com/ru/boi/23827/abel-pesut-vs-nelson-hysa?utm_source=claude-skill) (TKO, 4-й раунд), 7 июня 2025 — [Патрик Корте](https://boxerbook.com/ru/boi/23828/patrick-korte-vs-nelson-hysa?utm_source=claude-skill) (TKO, 2-й раунд).
-- **Паузы нет.** Он дрался три месяца назад, а Кабайел не выходил на ринг почти 11 месяцев.
-- **Но:** ему 42 года, а его соперники заметно слабее, чем у Кабайела.
+**Моя оценка по этим данным**
+- **За Кабайела:** заметно более высокий рейтинг, рейтинг вырос за последний год, он на 8 лет моложе и дерётся дома.
+- **За Хысу:** выше доля нокаутов, и он дрался недавно. У Кабайела перерыв почти 11 месяцев.
+- Как боксёры между собой выиграли бы эти бои, модель не учитывает. Стилей в данных тоже нет.
 
-Трансляция: пока известна только DAZN (Япония). Подробнее — на [странице вечера](https://boxerbook.com/ru/vechera/11870/2026-11-28-dusseldorf?utm_source=claude-skill).
+**Где смотреть:** Boxerbook знает только о трансляции на DAZN в Японии. Других трансляций в базе пока нет.
 
 Это вероятности, а не гарантии. И это не совет для ставок.
 
@@ -60,42 +63,45 @@ Source: [Boxerbook](https://boxerbook.com/ru/boi/192171/agit-kabayel-vs-nelson-h
 
 ## Final answer
 
-Boxerbook даёт победу **Агиту Кабайелу примерно в 92%**. Букмекеры оценивают его шансы похоже: около 89%.
+Boxerbook даёт **Агиту Кабайелу около 92%** на победу над **Нельсоном Хысой**. Букмекеры тоже видят его явным фаворитом.
 
-**[Агит Кабайел — Нельсон Хыса](https://boxerbook.com/ru/boi/192171/agit-kabayel-vs-nelson-hysa?utm_source=claude-skill)**: 28 ноября 2026, Дюссельдорф (Германия), 12 раундов, на кону титул WBC в супертяжёлом весе. Вечер начинается в 21:00 UTC, главный бой будет позже. Пока бой подтверждает только один источник.
+**[Агит Кабайел — Нельсон Хыса](https://boxerbook.com/ru/boi/192171/agit-kabayel-vs-nelson-hysa?utm_source=claude-skill)**
+- **Дата:** 28 ноября 2026, Дюссельдорф, Германия. Вечер начинается в 21:00 UTC. Это время начала всего вечера, а не главного боя.
+- **Бой:** 12 раундов, на кону титул «WBC heavyweight title».
+- **Статус:** у Boxerbook бой отмечен как подтверждённый одним источником (single_source).
 
 **Вероятности**
 
 | | Кабайел | Хыса |
 |---|---|---|
-| Прогноз Boxerbook (на 26 октября 2026) | 91,8% | 8,2% |
-| Букмекеры (13 контор, 2 ноября 2026) | 89,3% | 10,7% |
-| Букмекеры при открытии линии (20 октября 2026) | 89,8% | 10,2% |
+| Прогноз Boxerbook (от 26.10.2026) | **91,8%** | 8,2% |
+| Консенсус 13 букмекеров (на 02.11.2026) | **89,3%** | 10,7% |
+| Букмекеры при открытии линии (20.10.2026) | 89,8% | 10,2% |
 
-**Сравнение бойцов (записи перед боем)**
+**Данные модели**
 
 | | [Кабайел](https://boxerbook.com/ru/boksery/agit-kabayel-q28864444?utm_source=claude-skill) | [Хыса](https://boxerbook.com/ru/boksery/nelson-hysa-q20029125?utm_source=claude-skill) |
 |---|---|---|
-| Рекорд | 31-0-0 | 26-0-0 |
-| Доля нокаутов | 68% | 92% |
-| Возраст | 34 | 42 |
-| Размах рук | 203 см | 200,5 см |
+| Рекорд перед боем | 31-0-0 | 26-0-0 |
+| Доля побед нокаутом | 68% | 92% |
+| Последние 5 боёв | WWWWW | WWWWW |
+| Возраст | 34 года | 42 года |
+| Размах рук | 203 см (≈80") | 200,5 см (≈79") |
+| Рейтинг Boxerbook | 2383 (+56 за 12 мес.) | 2063 (+10 за 12 мес.) |
+| Перерыв без боёв | 322 дня | 91 день |
 | Стойка | правосторонняя | правосторонняя |
-| Рейтинг Boxerbook | ~2383 (+56 за 12 месяцев) | ~2063 (+10 за 12 месяцев) |
-| Последние 5 боёв | 5 побед | 5 побед |
-| Дней без боёв | 322 | 91 |
+| Дома или на выезде | дома | на выезде |
 
-**Почему фаворит Кабайел**
-- **Рейтинг.** У него рейтинг выше примерно на 320 пунктов. Только по рейтингу его шансы около 83%.
-- **Соперники.** Он бил сильных: 10 января 2026 — [Дамиан Кныба](https://boxerbook.com/ru/boi/9920/agit-kabayel-vs-damian-knyba?utm_source=claude-skill) (TKO, 3-й раунд), 22 февраля 2025 — [Чжан Чжилэй](https://boxerbook.com/ru/boi/32613/agit-kabayel-vs-zhang-zhilei?utm_source=claude-skill) (KO, 6-й раунд), 18 мая 2024 — [Франк Санчес](https://boxerbook.com/ru/boi/32614/agit-kabayel-vs-frank-sanchez?utm_source=claude-skill) (KO, 7-й раунд).
-- **Дома.** Бой пройдёт в Германии.
+**Последние бои**
+- **Кабайел:** победил техническим нокаутом Дамиана Кныбу в 3-м раунде ([10.01.2026](https://boxerbook.com/ru/boi/9920/agit-kabayel-vs-damian-knyba?utm_source=claude-skill)), нокаутом Чжана Чжилэя в 6-м раунде ([22.02.2025](https://boxerbook.com/ru/boi/32613/agit-kabayel-vs-zhang-zhilei?utm_source=claude-skill)) и нокаутом Франка Санчеса в 7-м раунде ([18.05.2024](https://boxerbook.com/ru/boi/32614/agit-kabayel-vs-frank-sanchez?utm_source=claude-skill)).
+- **Хыса:** победил техническим нокаутом Томаса Нармо во 2-м раунде ([29.08.2026](https://boxerbook.com/ru/boi/23826/thomas-narmo-vs-nelson-hysa?utm_source=claude-skill)), Абеля Песута в 4-м раунде ([09.10.2025](https://boxerbook.com/ru/boi/23827/abel-pesut-vs-nelson-hysa?utm_source=claude-skill)) и Патрика Корте во 2-м раунде ([07.06.2025](https://boxerbook.com/ru/boi/23828/patrick-korte-vs-nelson-hysa?utm_source=claude-skill)).
 
-**Шансы Хысы**
-- **Нокаутирующий удар и форма.** Он нокаутирует почти всех соперников. Последние три боя выиграл досрочно: 29 августа 2026 — [Томас Нармо](https://boxerbook.com/ru/boi/23826/thomas-narmo-vs-nelson-hysa?utm_source=claude-skill) (TKO, 2-й раунд), 9 октября 2025 — [Абель Песут](https://boxerbook.com/ru/boi/23827/abel-pesut-vs-nelson-hysa?utm_source=claude-skill) (TKO, 4-й раунд), 7 июня 2025 — [Патрик Корте](https://boxerbook.com/ru/boi/23828/patrick-korte-vs-nelson-hysa?utm_source=claude-skill) (TKO, 2-й раунд).
-- **Паузы нет.** Он дрался три месяца назад, а Кабайел не выходил на ринг почти 11 месяцев.
-- **Но:** ему 42 года, а его соперники заметно слабее, чем у Кабайела.
+**Моя оценка по этим данным**
+- **За Кабайела:** заметно более высокий рейтинг, рейтинг вырос за последний год, он на 8 лет моложе и дерётся дома.
+- **За Хысу:** выше доля нокаутов, и он дрался недавно. У Кабайела перерыв почти 11 месяцев.
+- Как боксёры между собой выиграли бы эти бои, модель не учитывает. Стилей в данных тоже нет.
 
-Трансляция: пока известна только DAZN (Япония). Подробнее — на [странице вечера](https://boxerbook.com/ru/vechera/11870/2026-11-28-dusseldorf?utm_source=claude-skill).
+**Где смотреть:** Boxerbook знает только о трансляции на DAZN в Японии. Других трансляций в базе пока нет.
 
 Это вероятности, а не гарантии. И это не совет для ставок.
 
@@ -106,13 +112,13 @@ Source: [Boxerbook](https://boxerbook.com/ru/boi/192171/agit-kabayel-vs-nelson-h
 ```json
 {
   "judge": {
-    "grounded": false,
+    "grounded": true,
     "cited": true,
     "dates_explicit": true,
     "no_betting_tips": true,
     "language": true,
     "task": true,
-    "notes": "Numbers and records are correct, but it claims the card starts at 21:00 UTC with the main event later (the data gives only the bout start time) and that Hysa's opponents are 'noticeably weaker' (no supporting data)."
+    "notes": "All figures trace to the tool output: 91.75% rounds to 91.8%, market 89.29% to 89.3%, the opening line 89.81% to 89.8%, plus age, reach in inches, layoff days and ko_rate. The card start is correctly described as the start of the whole card. Links are present, there is a Russian not-betting-advice line, and both records and the dated bout are given. The 'Моя оценка' section only restates tool data, and the 8-year age gap is derived from 34.2 and 42.2."
   },
   "checks": {
     "used_data_tool": true,
@@ -121,6 +127,6 @@ Source: [Boxerbook](https://boxerbook.com/ru/boi/192171/agit-kabayel-vs-nelson-h
     "utm_tagged": true,
     "read_reference": false
   },
-  "usd": 0.0534
+  "usd": 0.0708
 }
 ```

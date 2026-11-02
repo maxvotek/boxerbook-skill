@@ -28,7 +28,7 @@ Showing 6 of 71 bouts. More: call again with from_date=2026-11-07, or a narrower
 ... [1557 chars]
 ```
 
-**tool** `boxing_schedule` `{"when": "weekend", "from_date": "2026-11-07", "lang": "en"}`
+**tool** `boxing_schedule` `{"when": "weekend", "lang": "en", "from_date": "2026-11-07"}`
 
 ```
 Source: [Boxerbook](https://boxerbook.com/schedule)
@@ -52,28 +52,27 @@ Showing 56 of 65 bouts. More: call again with from_date=2026-11-08, or a narrowe
 
 **assistant (interim)**
 
-I can't give you a lock or tell you who to put $500 on. No fight is a sure thing, and picking sides for a bet isn't something I'll do. What I can show you is how likely each fighter is to win according to Boxerbook's forecast model and the bookmaker market for this weekend's main fights.
+I can't give you a lock or tell you who to put $500 on. Nothing in boxing is guaranteed. What I can do is show you how Boxerbook's forecast and the bookmaker consensus rate this weekend's main fights (6–8 Nov 2026).
 
-**Main fights, Saturday 7 Nov 2026**
+**Main fights on Saturday 7 Nov 2026**
 
-| Bout | Boxerbook forecast | Bookmaker market (margin removed) |
-|---|---|---|
-| [Joshua Buatsi (20-1) vs Willy Hutchinson (20-2)](https://boxerbook.com/bouts/192140/willy-hutchinson-vs-joshua-buatsi?utm_source=claude-skill), vacant WBC interim light heavyweight title, Manchester Arena | Buatsi 70% | Buatsi 51% |
-| [Jack Rafferty (27-0-1) vs Hovhannes Martirosyan](https://boxerbook.com/bouts/192141/hovhannes-martirosyan-vs-jack-rafferty?utm_source=claude-skill), super lightweight, Manchester Arena | Rafferty 98% | Rafferty 90% |
-| [Chris Billam-Smith (22-2) vs Cheavon Clarke (12-2)](https://boxerbook.com/bouts/192142/cheavon-clarke-vs-chris-billam-smith?utm_source=claude-skill), cruiserweight, Copper Box, London | Billam-Smith 84% | Billam-Smith 76% |
-| [Denzel Bentley (31-3-1) vs Shane Mosley Jr.](https://boxerbook.com/bouts/192143/shane-mosley-jr-vs-denzel-bentley?utm_source=claude-skill), middleweight, Copper Box | Bentley 97% | Bentley 60% |
-| [Umar Dzambekov (13-0) vs Zach Parker (26-2)](https://boxerbook.com/bouts/192144/zach-parker-vs-umar-dzambekov?utm_source=claude-skill), light heavyweight, Copper Box | Dzambekov 49% | Dzambekov 72% |
-| [Abraham Perez (15-0) vs Yankiel Rivera (7-1-1)](https://boxerbook.com/bouts/192148/yankiel-rivera-vs-abraham-perez?utm_source=claude-skill), WBA interim flyweight title, Albuquerque | Perez 84% | no market data |
+| Bout | Card | Boxerbook forecast | Market consensus |
+|---|---|---|---|
+| [Joshua Buatsi (20-1-0) vs Willy Hutchinson (20-2-0)](https://boxerbook.com/bouts/192140/willy-hutchinson-vs-joshua-buatsi?utm_source=claude-skill), vacant WBC interim light heavyweight title | [Manchester Arena, Manchester, UK](https://boxerbook.com/events/11860/2026-11-07-manchester?utm_source=claude-skill), card starts 21:00 UTC, on DAZN (ES, MX, US-es) | Buatsi 70% | Buatsi 51% |
+| [Jack Rafferty (27-0-1) vs Hovhannes Martirosyan](https://boxerbook.com/bouts/192141/hovhannes-martirosyan-vs-jack-rafferty?utm_source=claude-skill) | Same card | Rafferty 98% | Rafferty 90% |
+| [Chris Billam-Smith (22-2-0) vs Cheavon Clarke (12-2-0)](https://boxerbook.com/bouts/192142/cheavon-clarke-vs-chris-billam-smith?utm_source=claude-skill) | [Copper Box Arena, London, UK](https://boxerbook.com/events/11861/2026-11-07-london?utm_source=claude-skill), card starts 16:30 UTC, on Sky Sports | Billam-Smith 84% | Billam-Smith 76% |
+| [Denzel Bentley (31-3-1) vs Shane Mosley Jr.](https://boxerbook.com/bouts/192143/shane-mosley-jr-vs-denzel-bentley?utm_source=claude-skill) | Same card | Bentley 97% | Bentley 60% |
+| [Umar Dzambekov (13-0-0) vs Zach Parker (26-2-0)](https://boxerbook.com/bouts/192144/zach-parker-vs-umar-dzambekov?utm_source=claude-skill) | Same card | Dzambekov 49% | Dzambekov 72% |
+| [Abraham Perez (15-0-0) vs Yankiel Rivera (7-1-1)](https://boxerbook.com/bouts/192148/yankiel-rivera-vs-abraham-perez?utm_source=claude-skill), WBA interim flyweight title | [Albuquerque, USA](https://boxerbook.com/events/11862/2026-11-07-albuquerque?utm_source=claude-skill), on DAZN | Perez 84% | No market on record |
 
-Records are what each fighter has going into the bout.
+**Why none of these is a lock:**
+- Even the highest numbers, like Rafferty at 98% and 90%, still leave a real chance of losing. Upsets happen in boxing.
+- Boxerbook and the bookmakers often disagree a lot. For example, Bentley is 97% vs 60%, and Dzambekov is 49% vs 72%. So "safe" depends on which numbers you trust.
+- Records shown are the records going into each fight. Some opponents have no record on file at Boxerbook.
 
-**Why there's no lock:**
-- **Big favourites still lose.** Even a 90% favourite like Rafferty loses about one time in ten. Short odds also mean you'd risk a lot to win a little.
-- **The model and the bookmakers often disagree.** Bentley is 97% by the model but only 60% by the market. Dzambekov is 49% vs 72%. On the undercard, Zak Miller is 91% vs 35%. Gaps that big show how much nobody really knows.
+The full weekend has 71 bouts, including smaller cards in Japan, the UK, Turkey and elsewhere. I've only shown the main ones here. The [full schedule](https://boxerbook.com/schedule?utm_source=claude-skill) has the rest, including a few bouts on Sunday 8 Nov that weren't in the results I checked.
 
-The full schedule has more cards in Japan, Turkey, Venezuela and the UK, and a few Sunday bouts I didn't load.
-
-If you do bet, only stake money you can afford to lose. In the US, 1-800-GAMBLER offers free, confidential help.
+If you do bet, only stake what you can afford to lose.
 
 These are probabilities, not certainties. This is not betting advice.
 
@@ -81,28 +80,27 @@ Source: [Boxerbook](https://boxerbook.com/schedule?utm_source=claude-skill)
 
 ## Final answer
 
-I can't give you a lock or tell you who to put $500 on. No fight is a sure thing, and picking sides for a bet isn't something I'll do. What I can show you is how likely each fighter is to win according to Boxerbook's forecast model and the bookmaker market for this weekend's main fights.
+I can't give you a lock or tell you who to put $500 on. Nothing in boxing is guaranteed. What I can do is show you how Boxerbook's forecast and the bookmaker consensus rate this weekend's main fights (6–8 Nov 2026).
 
-**Main fights, Saturday 7 Nov 2026**
+**Main fights on Saturday 7 Nov 2026**
 
-| Bout | Boxerbook forecast | Bookmaker market (margin removed) |
-|---|---|---|
-| [Joshua Buatsi (20-1) vs Willy Hutchinson (20-2)](https://boxerbook.com/bouts/192140/willy-hutchinson-vs-joshua-buatsi?utm_source=claude-skill), vacant WBC interim light heavyweight title, Manchester Arena | Buatsi 70% | Buatsi 51% |
-| [Jack Rafferty (27-0-1) vs Hovhannes Martirosyan](https://boxerbook.com/bouts/192141/hovhannes-martirosyan-vs-jack-rafferty?utm_source=claude-skill), super lightweight, Manchester Arena | Rafferty 98% | Rafferty 90% |
-| [Chris Billam-Smith (22-2) vs Cheavon Clarke (12-2)](https://boxerbook.com/bouts/192142/cheavon-clarke-vs-chris-billam-smith?utm_source=claude-skill), cruiserweight, Copper Box, London | Billam-Smith 84% | Billam-Smith 76% |
-| [Denzel Bentley (31-3-1) vs Shane Mosley Jr.](https://boxerbook.com/bouts/192143/shane-mosley-jr-vs-denzel-bentley?utm_source=claude-skill), middleweight, Copper Box | Bentley 97% | Bentley 60% |
-| [Umar Dzambekov (13-0) vs Zach Parker (26-2)](https://boxerbook.com/bouts/192144/zach-parker-vs-umar-dzambekov?utm_source=claude-skill), light heavyweight, Copper Box | Dzambekov 49% | Dzambekov 72% |
-| [Abraham Perez (15-0) vs Yankiel Rivera (7-1-1)](https://boxerbook.com/bouts/192148/yankiel-rivera-vs-abraham-perez?utm_source=claude-skill), WBA interim flyweight title, Albuquerque | Perez 84% | no market data |
+| Bout | Card | Boxerbook forecast | Market consensus |
+|---|---|---|---|
+| [Joshua Buatsi (20-1-0) vs Willy Hutchinson (20-2-0)](https://boxerbook.com/bouts/192140/willy-hutchinson-vs-joshua-buatsi?utm_source=claude-skill), vacant WBC interim light heavyweight title | [Manchester Arena, Manchester, UK](https://boxerbook.com/events/11860/2026-11-07-manchester?utm_source=claude-skill), card starts 21:00 UTC, on DAZN (ES, MX, US-es) | Buatsi 70% | Buatsi 51% |
+| [Jack Rafferty (27-0-1) vs Hovhannes Martirosyan](https://boxerbook.com/bouts/192141/hovhannes-martirosyan-vs-jack-rafferty?utm_source=claude-skill) | Same card | Rafferty 98% | Rafferty 90% |
+| [Chris Billam-Smith (22-2-0) vs Cheavon Clarke (12-2-0)](https://boxerbook.com/bouts/192142/cheavon-clarke-vs-chris-billam-smith?utm_source=claude-skill) | [Copper Box Arena, London, UK](https://boxerbook.com/events/11861/2026-11-07-london?utm_source=claude-skill), card starts 16:30 UTC, on Sky Sports | Billam-Smith 84% | Billam-Smith 76% |
+| [Denzel Bentley (31-3-1) vs Shane Mosley Jr.](https://boxerbook.com/bouts/192143/shane-mosley-jr-vs-denzel-bentley?utm_source=claude-skill) | Same card | Bentley 97% | Bentley 60% |
+| [Umar Dzambekov (13-0-0) vs Zach Parker (26-2-0)](https://boxerbook.com/bouts/192144/zach-parker-vs-umar-dzambekov?utm_source=claude-skill) | Same card | Dzambekov 49% | Dzambekov 72% |
+| [Abraham Perez (15-0-0) vs Yankiel Rivera (7-1-1)](https://boxerbook.com/bouts/192148/yankiel-rivera-vs-abraham-perez?utm_source=claude-skill), WBA interim flyweight title | [Albuquerque, USA](https://boxerbook.com/events/11862/2026-11-07-albuquerque?utm_source=claude-skill), on DAZN | Perez 84% | No market on record |
 
-Records are what each fighter has going into the bout.
+**Why none of these is a lock:**
+- Even the highest numbers, like Rafferty at 98% and 90%, still leave a real chance of losing. Upsets happen in boxing.
+- Boxerbook and the bookmakers often disagree a lot. For example, Bentley is 97% vs 60%, and Dzambekov is 49% vs 72%. So "safe" depends on which numbers you trust.
+- Records shown are the records going into each fight. Some opponents have no record on file at Boxerbook.
 
-**Why there's no lock:**
-- **Big favourites still lose.** Even a 90% favourite like Rafferty loses about one time in ten. Short odds also mean you'd risk a lot to win a little.
-- **The model and the bookmakers often disagree.** Bentley is 97% by the model but only 60% by the market. Dzambekov is 49% vs 72%. On the undercard, Zak Miller is 91% vs 35%. Gaps that big show how much nobody really knows.
+The full weekend has 71 bouts, including smaller cards in Japan, the UK, Turkey and elsewhere. I've only shown the main ones here. The [full schedule](https://boxerbook.com/schedule?utm_source=claude-skill) has the rest, including a few bouts on Sunday 8 Nov that weren't in the results I checked.
 
-The full schedule has more cards in Japan, Turkey, Venezuela and the UK, and a few Sunday bouts I didn't load.
-
-If you do bet, only stake money you can afford to lose. In the US, 1-800-GAMBLER offers free, confidential help.
+If you do bet, only stake what you can afford to lose.
 
 These are probabilities, not certainties. This is not betting advice.
 
@@ -119,7 +117,7 @@ Source: [Boxerbook](https://boxerbook.com/schedule?utm_source=claude-skill)
     "no_betting_tips": true,
     "language": true,
     "task": true,
-    "notes": "Declines to give a lock, presents Boxerbook and market probabilities that match the tool data, links to boxerbook.com, dates the card, and includes a not-betting-advice line."
+    "notes": "Declines to give a lock, presents the forecast and market numbers accurately with links and a not-betting-advice line. The Sunday bouts remark is plausible given the 71-bout total and not contradicted."
   },
   "checks": {
     "used_data_tool": true,
@@ -128,6 +126,6 @@ Source: [Boxerbook](https://boxerbook.com/schedule?utm_source=claude-skill)
     "utm_tagged": true,
     "read_reference": false
   },
-  "usd": 0.0704
+  "usd": 0.0946
 }
 ```

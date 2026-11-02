@@ -17,43 +17,43 @@ Source: [Boxerbook](https://boxerbook.com/ru/boi/4153/tyson-fury-vs-oleksandr-us
 
 **assistant (interim)**
 
-В последнем бою **[Усик — Фьюри](https://boxerbook.com/ru/boi/4153/tyson-fury-vs-oleksandr-usyk?utm_source=claude-skill)** победил **Александр Усик**. Это был реванш 21 декабря 2024 года в Kingdom Arena (Эр-Рияд). Усик выиграл единогласным решением судей после 12 раундов.
+В их последнем бою **21 декабря 2024 года** победил **Александр Усик**: он выиграл у Тайсона Фьюри единогласным решением судей после всех 12 раундов. Бой прошёл на Kingdom Arena в Эр-Рияде (Саудовская Аравия).
 
 **Подробности боя:**
-- **Титулы:** WBA (Super), WBC, WBO, IBO и The Ring в супертяжёлом весе
+- **Титулы на кону:** WBA (Super), WBC, WBO, IBO and The Ring heavyweight titles
 - **Рекорды перед боем:** Усик 22-0-0, Фьюри 34-1-1
-- **Промоутер:** Queensberry Promotions ([карта вечера](https://boxerbook.com/ru/vechera/809/2024-12-21-riyadh?utm_source=claude-skill))
-- **Результат официально подтверждён**
+- **Промоутер:** Queensberry Promotions
+- **Статус результата:** официальный
 
-**Записки судей:** в Boxerbook нет оценок по каждому судье, поэтому называть цифры я не буду. Среди источников этого боя есть страница WBA с протоколами судей: [WBA Fights Master Scores](https://www.wbaboxing.com/wba-fights-master-scores#2024-12-21-oleksandr-usyk-vs-tyson-fury). Там их можно проверить.
+**Записки судей:** в Boxerbook нет судейских записок, поэтому сами оценки я не привожу. Среди источников этого боя Boxerbook указывает [таблицу оценок WBA (WBA Fights Master Scores)](https://www.wbaboxing.com/wba-fights-master-scores#2024-12-21-oleksandr-usyk-vs-tyson-fury). Скорее всего, оценки опубликованы там.
 
-**История встреч:** они дрались дважды, и оба раза победил Усик:
-1. 18 мая 2024 — раздельным решением судей за 12 раундов ([бой](https://boxerbook.com/ru/boi/4154/tyson-fury-vs-oleksandr-usyk?utm_source=claude-skill))
-2. 21 декабря 2024 — единогласным решением судей за 12 раундов
+**Личные встречи:** боксёры встречались дважды, и оба раза победил Усик:
+- [18 мая 2024 года](https://boxerbook.com/ru/boi/4154/tyson-fury-vs-oleksandr-usyk?utm_source=claude-skill): раздельное решение судей (SD), 12 раундов
+- [21 декабря 2024 года](https://boxerbook.com/ru/boi/4153/tyson-fury-vs-oleksandr-usyk?utm_source=claude-skill): единогласное решение судей (UD), 12 раундов
 
-На 2 ноября 2026 года у [Александра Усика](https://boxerbook.com/ru/boksery/oleksandr-usyk-q938027?utm_source=claude-skill) рекорд 25-0-0, у [Тайсона Фьюри](https://boxerbook.com/ru/boksery/tyson-fury-q1000592?utm_source=claude-skill) — 36-2-1.
+Рекорды на 2 ноября 2026 года: [Усик](https://boxerbook.com/ru/boksery/oleksandr-usyk-q938027?utm_source=claude-skill) 25-0-0, [Фьюри](https://boxerbook.com/ru/boksery/tyson-fury-q1000592?utm_source=claude-skill) 36-2-1.
 
-Source: [Boxerbook](https://boxerbook.com/ru/boi/4153/tyson-fury-vs-oleksandr-usyk?utm_source=claude-skill)
+Источник: [Boxerbook](https://boxerbook.com/ru/boi/4153/tyson-fury-vs-oleksandr-usyk?utm_source=claude-skill)
 
 ## Final answer
 
-В последнем бою **[Усик — Фьюри](https://boxerbook.com/ru/boi/4153/tyson-fury-vs-oleksandr-usyk?utm_source=claude-skill)** победил **Александр Усик**. Это был реванш 21 декабря 2024 года в Kingdom Arena (Эр-Рияд). Усик выиграл единогласным решением судей после 12 раундов.
+В их последнем бою **21 декабря 2024 года** победил **Александр Усик**: он выиграл у Тайсона Фьюри единогласным решением судей после всех 12 раундов. Бой прошёл на Kingdom Arena в Эр-Рияде (Саудовская Аравия).
 
 **Подробности боя:**
-- **Титулы:** WBA (Super), WBC, WBO, IBO и The Ring в супертяжёлом весе
+- **Титулы на кону:** WBA (Super), WBC, WBO, IBO and The Ring heavyweight titles
 - **Рекорды перед боем:** Усик 22-0-0, Фьюри 34-1-1
-- **Промоутер:** Queensberry Promotions ([карта вечера](https://boxerbook.com/ru/vechera/809/2024-12-21-riyadh?utm_source=claude-skill))
-- **Результат официально подтверждён**
+- **Промоутер:** Queensberry Promotions
+- **Статус результата:** официальный
 
-**Записки судей:** в Boxerbook нет оценок по каждому судье, поэтому называть цифры я не буду. Среди источников этого боя есть страница WBA с протоколами судей: [WBA Fights Master Scores](https://www.wbaboxing.com/wba-fights-master-scores#2024-12-21-oleksandr-usyk-vs-tyson-fury). Там их можно проверить.
+**Записки судей:** в Boxerbook нет судейских записок, поэтому сами оценки я не привожу. Среди источников этого боя Boxerbook указывает [таблицу оценок WBA (WBA Fights Master Scores)](https://www.wbaboxing.com/wba-fights-master-scores#2024-12-21-oleksandr-usyk-vs-tyson-fury). Скорее всего, оценки опубликованы там.
 
-**История встреч:** они дрались дважды, и оба раза победил Усик:
-1. 18 мая 2024 — раздельным решением судей за 12 раундов ([бой](https://boxerbook.com/ru/boi/4154/tyson-fury-vs-oleksandr-usyk?utm_source=claude-skill))
-2. 21 декабря 2024 — единогласным решением судей за 12 раундов
+**Личные встречи:** боксёры встречались дважды, и оба раза победил Усик:
+- [18 мая 2024 года](https://boxerbook.com/ru/boi/4154/tyson-fury-vs-oleksandr-usyk?utm_source=claude-skill): раздельное решение судей (SD), 12 раундов
+- [21 декабря 2024 года](https://boxerbook.com/ru/boi/4153/tyson-fury-vs-oleksandr-usyk?utm_source=claude-skill): единогласное решение судей (UD), 12 раундов
 
-На 2 ноября 2026 года у [Александра Усика](https://boxerbook.com/ru/boksery/oleksandr-usyk-q938027?utm_source=claude-skill) рекорд 25-0-0, у [Тайсона Фьюри](https://boxerbook.com/ru/boksery/tyson-fury-q1000592?utm_source=claude-skill) — 36-2-1.
+Рекорды на 2 ноября 2026 года: [Усик](https://boxerbook.com/ru/boksery/oleksandr-usyk-q938027?utm_source=claude-skill) 25-0-0, [Фьюри](https://boxerbook.com/ru/boksery/tyson-fury-q1000592?utm_source=claude-skill) 36-2-1.
 
-Source: [Boxerbook](https://boxerbook.com/ru/boi/4153/tyson-fury-vs-oleksandr-usyk?utm_source=claude-skill)
+Источник: [Boxerbook](https://boxerbook.com/ru/boi/4153/tyson-fury-vs-oleksandr-usyk?utm_source=claude-skill)
 
 ## Grade
 
@@ -66,7 +66,7 @@ Source: [Boxerbook](https://boxerbook.com/ru/boi/4153/tyson-fury-vs-oleksandr-us
     "no_betting_tips": true,
     "language": true,
     "task": true,
-    "notes": "Correct winner, UD, 21 Dec 2024, mentions the May 2024 SD, and explicitly states Boxerbook has no per-judge scorecards without inventing any. Links and sourcing are good; describing the WBA page as having judges' protocols is a minor inference."
+    "notes": "All facts match the tool output: date, UD, venue, titles, pre-bout records (22-0-0 and 34-1-1), promoter, and current records as of 2026-11-02. It states that Boxerbook has no judges' scorecards and does not invent any. The remark that the scores are 'most likely published' on the WBA page is hedged and reasonable. Boxerbook links are present and the earlier SD fight is mentioned with its date."
   },
   "checks": {
     "used_data_tool": true,
@@ -75,6 +75,6 @@ Source: [Boxerbook](https://boxerbook.com/ru/boi/4153/tyson-fury-vs-oleksandr-us
     "utm_tagged": true,
     "read_reference": false
   },
-  "usd": 0.0519
+  "usd": 0.0325
 }
 ```

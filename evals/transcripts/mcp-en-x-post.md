@@ -15,101 +15,53 @@ Source: [Boxerbook](https://boxerbook.com/bouts/192134/christian-m-billi-vs-cane
 ... [6712 chars]
 ```
 
-**tool** `read_file` `{"path": "references/templates.md"}`
-
-```
-# Output templates
-
-The numbers below are illustrations of the layout, fetched once on
-2 Nov 2026. Never reuse them: fetch fresh data for every answer.
-
-## Contents
-1. Fighter card · 2. Tale of the tape · 3. Fight-night rundown ·
-4. Results recap · 5. Ranking table · 6. Prediction / forecast ·
-7. Upset analysis · 8. Social post
-
-Pick the one that fits; adapt headings to the user's language. Keep tables
-narrow (chat apps wrap). Every template ends with a source line. Times:
-convert `start_utc` to the user's time zone when you know it, else give UTC
-and one or two big zones (ET, UK). Dates: write them out ("Sat 31 Oct 2026").
-
-## 1. Fighter card
-
-```
-**Oleksandr Usyk** "The Cat" · 🇺🇦 Ukraine · Heavyweight
-Record **25-0-0 (16 KOs)** · southpaw · 191 cm, reach 198 cm · born 1987
-Last fight: W TKO 11 vs Rico Verhoeven, 23 May 2026 → [bout](url)
-Next fight: none scheduled on Boxerbook
-Boxerbook rating: #1 heavyweight (mu 2701)
-As favourite 4-0, as underdog 1-0
-Source: [Boxerbook](boxer url) · data as of 2 Nov 2026
-```
-
-## 2. Tale of the tape
-
-```
-| | Oleksandr Usyk | Daniel Dubois |
-|---|---|---|
-| Record | 25-0-0 (16 KO) | 24-3-0 (23 KO) |
-| Age / born | 1987 | 1997 |
-| Height | 191 cm (6'3") | 196 cm (6'5") |
-| Reach | 198 cm (78") | 198 cm (78") |
-| Stance | southpaw | orthodox |
-| Last 5 | WWWWW | WWLWW |
-| Boxerbook rating | 2701 (#1) | 2434 (#3) |
-| Head to head | Usyk 2-0 (KO 9, 2023; KO 5, 2025) | |
-```
-Then 2-4 sentences of context (styles, what changed since they last met
-... [4107 chars]
-```
-
 **assistant (interim)**
 
-Here's a post under 280 characters (X counts any link as 23):
+Here's your X post (about 265 of 280 characters, with the link counting as 23):
 
 ---
 
-🥊 Canelo Álvarez bounces back from the Crawford loss: UD 12 over Christian M'billi in a WBC super middleweight title fight in Riyadh, 31 Oct 2026.
+Canelo Álvarez def. Christian M'billi by UD (12 rds) for the WBC super middleweight title 🥊
 
-First pro loss for M'billi (29-0-1 going in). Canelo now 64-3-2.
+📍 Kingdom Arena, Riyadh · 31 Oct 2026
 
-https://boxerbook.com/bouts/192134/christian-m-billi-vs-canelo-alvarez?utm_source=claude-skill
+First loss for M'billi (29-0-1 going in). Canelo, back after 413 days out, moves to 64-3-2.
 
-#boxing #Canelo
+Via Boxerbook: https://boxerbook.com/bouts/192134/christian-m-billi-vs-canelo-alvarez?utm_source=claude-skill
 
 ---
 
-**Fact check:**
-- **Fight:** Canelo won by unanimous decision after 12 rounds at Kingdom Arena in Riyadh on Saturday 31 October 2026.
-- **The Crawford loss:** Canelo lost to Terence Crawford by unanimous decision on 13 September 2025. He hadn't fought since, so this fight came after a 413-day break.
-- **Records:** M'billi was 29-0-1 going in and is now 29-1-1. Canelo was 63-3-2 going in and is now 64-3-2.
-- **The title:** My source lists it as a "WBC super middleweight title" fight but doesn't say whether Canelo won the full belt or an interim one. I wrote "title fight" to be safe. Change it to "wins the WBC title" if you've confirmed that.
-- **Left out:** There were also fight-week reports of elbow surgery before Canelo's comeback. They came from a single YouTube channel, so I didn't include them.
+**Facts it's based on:**
+- **Result:** On 31 Oct 2026 at [Kingdom Arena, Riyadh](https://boxerbook.com/events/11859/2026-10-31-riyadh?utm_source=claude-skill), [Canelo Álvarez](https://boxerbook.com/boxers/canelo-alvarez-q2117769?utm_source=claude-skill) beat [Christian M'billi](https://boxerbook.com/boxers/christian-m-billi-q20752041?utm_source=claude-skill) by unanimous decision over 12 rounds. The title was listed as the "WBC super middleweight title." Multiple sources agree on the result.
+- **Records:** M'billi was 29-0-1 going in, so this is his first loss. Canelo's record is now 64-3-2.
+- **Layoff:** Canelo had been out for 413 days. His previous fight was a unanimous decision loss to [Terence Crawford](https://boxerbook.com/bouts/25025/terence-crawford-vs-canelo-alvarez?utm_source=claude-skill) on 13 Sep 2025.
+
+If you want a different angle, the Crawford loss would also work (e.g. "bounces back from the Crawford loss"), but you'd have to cut something to stay under 280.
 
 Source: [Boxerbook](https://boxerbook.com/bouts/192134/christian-m-billi-vs-canelo-alvarez?utm_source=claude-skill)
 
 ## Final answer
 
-Here's a post under 280 characters (X counts any link as 23):
+Here's your X post (about 265 of 280 characters, with the link counting as 23):
 
 ---
 
-🥊 Canelo Álvarez bounces back from the Crawford loss: UD 12 over Christian M'billi in a WBC super middleweight title fight in Riyadh, 31 Oct 2026.
+Canelo Álvarez def. Christian M'billi by UD (12 rds) for the WBC super middleweight title 🥊
 
-First pro loss for M'billi (29-0-1 going in). Canelo now 64-3-2.
+📍 Kingdom Arena, Riyadh · 31 Oct 2026
 
-https://boxerbook.com/bouts/192134/christian-m-billi-vs-canelo-alvarez?utm_source=claude-skill
+First loss for M'billi (29-0-1 going in). Canelo, back after 413 days out, moves to 64-3-2.
 
-#boxing #Canelo
+Via Boxerbook: https://boxerbook.com/bouts/192134/christian-m-billi-vs-canelo-alvarez?utm_source=claude-skill
 
 ---
 
-**Fact check:**
-- **Fight:** Canelo won by unanimous decision after 12 rounds at Kingdom Arena in Riyadh on Saturday 31 October 2026.
-- **The Crawford loss:** Canelo lost to Terence Crawford by unanimous decision on 13 September 2025. He hadn't fought since, so this fight came after a 413-day break.
-- **Records:** M'billi was 29-0-1 going in and is now 29-1-1. Canelo was 63-3-2 going in and is now 64-3-2.
-- **The title:** My source lists it as a "WBC super middleweight title" fight but doesn't say whether Canelo won the full belt or an interim one. I wrote "title fight" to be safe. Change it to "wins the WBC title" if you've confirmed that.
-- **Left out:** There were also fight-week reports of elbow surgery before Canelo's comeback. They came from a single YouTube channel, so I didn't include them.
+**Facts it's based on:**
+- **Result:** On 31 Oct 2026 at [Kingdom Arena, Riyadh](https://boxerbook.com/events/11859/2026-10-31-riyadh?utm_source=claude-skill), [Canelo Álvarez](https://boxerbook.com/boxers/canelo-alvarez-q2117769?utm_source=claude-skill) beat [Christian M'billi](https://boxerbook.com/boxers/christian-m-billi-q20752041?utm_source=claude-skill) by unanimous decision over 12 rounds. The title was listed as the "WBC super middleweight title." Multiple sources agree on the result.
+- **Records:** M'billi was 29-0-1 going in, so this is his first loss. Canelo's record is now 64-3-2.
+- **Layoff:** Canelo had been out for 413 days. His previous fight was a unanimous decision loss to [Terence Crawford](https://boxerbook.com/bouts/25025/terence-crawford-vs-canelo-alvarez?utm_source=claude-skill) on 13 Sep 2025.
+
+If you want a different angle, the Crawford loss would also work (e.g. "bounces back from the Crawford loss"), but you'd have to cut something to stay under 280.
 
 Source: [Boxerbook](https://boxerbook.com/bouts/192134/christian-m-billi-vs-canelo-alvarez?utm_source=claude-skill)
 
@@ -124,15 +76,15 @@ Source: [Boxerbook](https://boxerbook.com/bouts/192134/christian-m-billi-vs-cane
     "no_betting_tips": true,
     "language": true,
     "task": true,
-    "notes": "All facts match the tool result (UD 12, WBC super middleweight title, Riyadh, 31 Oct 2026, records, Crawford loss). The post is under 280 characters, links to the Boxerbook bout page, credits Boxerbook, and has no betting angle."
+    "notes": "All facts (UD, 12 rds, WBC super middleweight title, Kingdom Arena, 29-0-1 going in, 64-3-2, 413 days layoff, Crawford loss 13 Sep 2025) match the tool output. The post is concise, links Boxerbook, and has no betting content."
   },
   "checks": {
     "used_data_tool": true,
     "has_boxerbook_link": true,
     "lang_heuristic": true,
     "utm_tagged": true,
-    "read_reference": true
+    "read_reference": false
   },
-  "usd": 0.0615
+  "usd": 0.0526
 }
 ```

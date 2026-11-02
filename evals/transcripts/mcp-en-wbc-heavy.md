@@ -34,12 +34,11 @@ Heavyweight rankings: WBC (2026-10-01).
 
 **assistant (interim)**
 
-Here is the WBC's heavyweight top 10 as of 1 October 2026, according to Boxerbook. Agit Kabayel holds the title.
-
-**Champion:** [Agit Kabayel](https://boxerbook.com/boxers/agit-kabayel-q28864444?utm_source=claude-skill)
+Agit Kabayel is the WBC heavyweight champion. Here's the WBC's top 10, from its list dated 1 October 2026:
 
 | # | Boxer |
 |---|---|
+| C | [Agit Kabayel](https://boxerbook.com/boxers/agit-kabayel-q28864444?utm_source=claude-skill) |
 | 1 | [Tyson Fury](https://boxerbook.com/boxers/tyson-fury-q1000592?utm_source=claude-skill) |
 | 2 | [Anthony Joshua](https://boxerbook.com/boxers/anthony-joshua-q573463?utm_source=claude-skill) |
 | 3 | [Frank Sanchez](https://boxerbook.com/boxers/frank-sanchez-q85865836?utm_source=claude-skill) |
@@ -51,18 +50,17 @@ Here is the WBC's heavyweight top 10 as of 1 October 2026, according to Boxerboo
 | 9 | [Richard Riakporhe](https://boxerbook.com/boxers/richard-riakporhe-q79052399?utm_source=claude-skill) |
 | 10 | [Andrii Novitskyi](https://boxerbook.com/boxers/andrii-novytskyi-q136735484?utm_source=claude-skill) |
 
-I can look up the record of any boxer on the list.
+The list didn't include records. I can look up the current record for any of these boxers, or show you the WBA, IBF, WBO, The Ring or Boxerbook heavyweight rankings.
 
 Source: [Boxerbook](https://boxerbook.com/rankings/hea?list=wbc&utm_source=claude-skill)
 
 ## Final answer
 
-Here is the WBC's heavyweight top 10 as of 1 October 2026, according to Boxerbook. Agit Kabayel holds the title.
-
-**Champion:** [Agit Kabayel](https://boxerbook.com/boxers/agit-kabayel-q28864444?utm_source=claude-skill)
+Agit Kabayel is the WBC heavyweight champion. Here's the WBC's top 10, from its list dated 1 October 2026:
 
 | # | Boxer |
 |---|---|
+| C | [Agit Kabayel](https://boxerbook.com/boxers/agit-kabayel-q28864444?utm_source=claude-skill) |
 | 1 | [Tyson Fury](https://boxerbook.com/boxers/tyson-fury-q1000592?utm_source=claude-skill) |
 | 2 | [Anthony Joshua](https://boxerbook.com/boxers/anthony-joshua-q573463?utm_source=claude-skill) |
 | 3 | [Frank Sanchez](https://boxerbook.com/boxers/frank-sanchez-q85865836?utm_source=claude-skill) |
@@ -74,7 +72,7 @@ Here is the WBC's heavyweight top 10 as of 1 October 2026, according to Boxerboo
 | 9 | [Richard Riakporhe](https://boxerbook.com/boxers/richard-riakporhe-q79052399?utm_source=claude-skill) |
 | 10 | [Andrii Novitskyi](https://boxerbook.com/boxers/andrii-novytskyi-q136735484?utm_source=claude-skill) |
 
-I can look up the record of any boxer on the list.
+The list didn't include records. I can look up the current record for any of these boxers, or show you the WBA, IBF, WBO, The Ring or Boxerbook heavyweight rankings.
 
 Source: [Boxerbook](https://boxerbook.com/rankings/hea?list=wbc&utm_source=claude-skill)
 
@@ -89,7 +87,7 @@ Source: [Boxerbook](https://boxerbook.com/rankings/hea?list=wbc&utm_source=claud
     "no_betting_tips": true,
     "language": true,
     "task": true,
-    "notes": "The answer matches the tool output: Kabayel as champion, positions 1-10 in the returned order, and the list date of 2026-10-01 (written as 1 October 2026). Every boxer is linked to boxerbook.com and the source is credited. The utm_source parameters on the links are harmless. No fights are mentioned and no betting advice is given."
+    "notes": "The champion and positions 1-10 match the tool output exactly, and the list date of 1 October 2026 is correct. Every boxer is linked to boxerbook.com, and Boxerbook is credited as the source. The claim that the list has no records is accurate. No fights are mentioned, so dates are not applicable, and there are no betting tips."
   },
   "checks": {
     "used_data_tool": true,
@@ -98,6 +96,6 @@ Source: [Boxerbook](https://boxerbook.com/rankings/hea?list=wbc&utm_source=claud
     "utm_tagged": true,
     "read_reference": false
   },
-  "usd": 0.024
+  "usd": 0.0438
 }
 ```

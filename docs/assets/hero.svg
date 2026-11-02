@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="400" viewBox="0 0 1280 400" role="img" aria-label="Boxerbook boxing skill for Claude">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#14141a"/><stop offset="1" stop-color="#2a0f12"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="400" fill="url(#bg)"/>
+  <g stroke="#c9a227" stroke-opacity="0.35" stroke-width="3" fill="none">
+    <line x1="760" y1="70" x2="1220" y2="70"/><line x1="760" y1="130" x2="1220" y2="130"/><line x1="760" y1="190" x2="1220" y2="190"/>
+    <line x1="760" y1="40" x2="760" y2="220"/><line x1="1220" y1="40" x2="1220" y2="220"/>
+  </g>
+  <text x="80" y="150" font-family="Helvetica, Arial, sans-serif" font-size="78" font-weight="700" fill="#ffffff">Boxing for Claude</text>
+  <text x="80" y="210" font-family="Helvetica, Arial, sans-serif" font-size="30" fill="#e8d7a8">Live records, fight nights, results, rankings — always cited.</text>
+  <text x="80" y="255" font-family="Helvetica, Arial, sans-serif" font-size="24" fill="#b9b9c3">Powered by Boxerbook · 30,000 boxers · 190,000 bouts · open data (ODbL)</text>
+  <g font-family="Menlo, Consolas, monospace" font-size="22">
+    <rect x="80" y="295" width="760" height="62" rx="10" fill="#000000" fill-opacity="0.45" stroke="#c9a227" stroke-opacity="0.5"/>
+    <text x="104" y="335" fill="#c9a227">/plugin marketplace add</text>
+    <text x="410" y="335" fill="#ffffff">mvtk1978/boxerbook-skill</text>
+  </g>
+  <g font-family="Helvetica, Arial, sans-serif" fill="#ffffff">
+    <text x="990" y="300" font-size="22" text-anchor="middle" fill="#b9b9c3">Usyk vs Dubois</text>
+    <text x="990" y="340" font-size="30" text-anchor="middle" font-weight="700">25-0-0  ·  24-3-0</text>
+  </g>
+</svg>

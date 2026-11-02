@@ -6,40 +6,6 @@
 
 ## Trace
 
-**tool** `read_file` `{"path": "references/api.md"}`
-
-```
-# Boxerbook data access: MCP tools and REST API
-
-Two doors to the same data. Use the MCP tools when they are connected (tool
-names `boxing_schedule`, `boxer`, `bout` … possibly prefixed, e.g.
-`mcp__plugin_boxing_boxerbook__boxer`). Otherwise use the REST API, through
-`scripts/boxerbook.py` when you can run code, or by fetching the URLs directly.
-
-## Contents
-1. MCP server (tools, arguments, what each answers)
-2. REST API (endpoints, parameters)
-3. The helper script
-4. Fields and how to read them
-5. Gotchas
-
-## 1. MCP server
-
-Endpoint `https://mcp.boxerbook.com/mcp` (also `https://boxerbook.com/mcp`),
-Streamable HTTP, stateless, no auth, 300 calls/min per IP. Every tool takes
-`lang` (`en` | `es` | `ru` | `ja`): pass the user's language so the
-boxerbook.com links in the answer are localized (`/es/boxeadores/...`,
-`/ru/boksery/...`). Every answer carries `cite` (a ready markdown link) and `url`.
-
-| Tool | Arguments | Use it for |
-|---|---|---|
-| `search` | `query` (a boxer, "A vs B", a division) | anything, when unsure which tool; returns document ids + urls |
-| `fetch` | `id` = `boxer:<id>`, `bout:<id>`, `event:<id>`, `rankings:<DIV>` | the full document behind a search hit, as Markdown |
-| `search_boxers` | `q` | name ambiguity: up to 20 boxers sharing a name/spelling, with country, division, record |
-| `boxer` | `query` (name, slug or id) | a boxer's card: record (W-L-D, KOs), division, stance, height, reach, birth year, nickname, next fight, last result, rating, record as fa
-... [9463 chars]
-```
-
 **tool** `boxing_schedule` `{"when": "weekend", "lang": "en"}`
 
 ```
@@ -62,7 +28,7 @@ Showing 6 of 71 bouts. More: call again with from_date=2026-11-07, or a narrower
 ... [1557 chars]
 ```
 
-**tool** `boxing_schedule` `{"when": "weekend", "from_date": "2026-11-07", "lang": "en"}`
+**tool** `boxing_schedule` `{"when": "weekend", "lang": "en", "from_date": "2026-11-07"}`
 
 ```
 Source: [Boxerbook](https://boxerbook.com/schedule)
@@ -84,7 +50,7 @@ Showing 56 of 65 bouts. More: call again with from_date=2026-11-08, or a narrowe
 ... [10467 chars]
 ```
 
-**tool** `boxing_schedule` `{"when": "weekend", "from_date": "2026-11-08", "lang": "en"}`
+**tool** `boxing_schedule` `{"when": "weekend", "lang": "en", "from_date": "2026-11-08"}`
 
 ```
 Source: [Boxerbook](https://boxerbook.com/schedule)
@@ -103,81 +69,87 @@ Times are card starts in UTC. Records are going into the bout. p is the Boxerboo
 
 **assistant (interim)**
 
-Boxerbook lists 71 bouts on 15 cards from Friday 6 to Sunday 8 November 2026. These are the main ones. Times are when each card starts, in UTC. Main events usually begin 2–4 hours later. Records are going into each fight.
+This weekend (Friday 6 – Sunday 8 November 2026) has 71 scheduled bouts. The biggest nights are in Manchester, London and Arlington, all on Saturday 7 November. Times below are when each **card** starts, in UTC. Main events start later.
 
-## Saturday 7 Nov: London, Copper Box Arena
-**Card starts 16:30 UTC · Sky Sports** · [Card](https://boxerbook.com/events/11861/2026-11-07-london?utm_source=claude-skill)
+## Saturday 7 November
+
+**[Manchester Arena, Manchester, UK](https://boxerbook.com/events/11860/2026-11-07-manchester?utm_source=claude-skill)**: starts 21:00 UTC, on DAZN in Spain, Mexico and the US (Spanish)
+- [Joshua Buatsi (20-1) vs Willy Hutchinson (20-2)](https://boxerbook.com/bouts/192140/willy-hutchinson-vs-joshua-buatsi?utm_source=claude-skill): light heavyweight, 12 rounds, for the vacant WBC interim light heavyweight title
+- [Jack Rafferty (27-0-1) vs Hovhannes Martirosyan](https://boxerbook.com/bouts/192141/hovhannes-martirosyan-vs-jack-rafferty?utm_source=claude-skill): super lightweight, 12 rounds
+
+**[Copper Box Arena, London, UK](https://boxerbook.com/events/11861/2026-11-07-london?utm_source=claude-skill)**: starts 16:30 UTC, on Sky Sports
 - [Chris Billam-Smith (22-2) vs Cheavon Clarke (12-2)](https://boxerbook.com/bouts/192142/cheavon-clarke-vs-chris-billam-smith?utm_source=claude-skill): cruiserweight, 10 rounds
 - [Denzel Bentley (31-3-1) vs Shane Mosley Jr.](https://boxerbook.com/bouts/192143/shane-mosley-jr-vs-denzel-bentley?utm_source=claude-skill): middleweight, 12 rounds
 - [Umar Dzambekov (13-0) vs Zach Parker (26-2)](https://boxerbook.com/bouts/192144/zach-parker-vs-umar-dzambekov?utm_source=claude-skill): light heavyweight, 10 rounds
-- Also on the card: Ezra Taylor (13-1) vs Bradley Rea, plus prospects Da'Mazion Vanhouter and Sam Hickey
+- [Ezra Taylor (13-1) vs Bradley Rea (1-2)](https://boxerbook.com/bouts/193151/ezra-taylor-vs-bradley-rea?utm_source=claude-skill): light heavyweight
 
-## Saturday 7 Nov: Manchester Arena
-**Card starts 21:00 UTC · DAZN (Spain, Mexico, US Spanish-language listed)** · [Card](https://boxerbook.com/events/11860/2026-11-07-manchester?utm_source=claude-skill)
-- [Joshua Buatsi (20-1) vs Willy Hutchinson (20-2)](https://boxerbook.com/bouts/192140/willy-hutchinson-vs-joshua-buatsi?utm_source=claude-skill): **vacant WBC interim light heavyweight title**, 12 rounds
-- [Jack Rafferty (27-0-1) vs Hovhannes Martirosyan](https://boxerbook.com/bouts/192141/hovhannes-martirosyan-vs-jack-rafferty?utm_source=claude-skill): super lightweight, 12 rounds
+**[Albuquerque, USA](https://boxerbook.com/events/11862/2026-11-07-albuquerque?utm_source=claude-skill)**: on DAZN
+- [Abraham Perez (15-0) vs Yankiel Rivera (7-1-1)](https://boxerbook.com/bouts/192148/yankiel-rivera-vs-abraham-perez?utm_source=claude-skill): flyweight, 12 rounds, for the WBA interim flyweight title
 
-## Saturday 7 Nov: Albuquerque, US
-**DAZN (worldwide) · start time not on record** · [Card](https://boxerbook.com/events/11862/2026-11-07-albuquerque?utm_source=claude-skill)
-- [Abraham Perez (15-0) vs Yankiel Rivera (7-1-1)](https://boxerbook.com/bouts/192148/yankiel-rivera-vs-abraham-perez?utm_source=claude-skill): **WBA interim flyweight title**, 12 rounds
+**[Korakuen Hall, Japan](https://boxerbook.com/events/11915/2026-11-07?utm_source=claude-skill)**: on U-NEXT in Japan
+- [Kenichi Ogawa (32-2-1) vs Jae-woo Lee](https://boxerbook.com/bouts/193310/jae-woo-lee-vs-kenichi-ogawa?utm_source=claude-skill): super featherweight, 10 rounds
+- [Yamato Hata (19-2-1) vs Ryō Sagawa (14-5)](https://boxerbook.com/bouts/193311/ryo-sagawa-vs-yamato-hata?utm_source=claude-skill): super featherweight, 10 rounds
 
-## Sunday 8 Nov, 01:00 UTC (Saturday evening in the US): Arlington, US
-**ESPN / ESPN+ (US)** · [Card](https://boxerbook.com/events/11863/2026-11-08-arlington?utm_source=claude-skill). This card is stacked with women's title fights:
-- [Alycia Baumgardner (18-1) vs Elif Nur Turhan (15-0)](https://boxerbook.com/bouts/192149/elif-nur-turhan-vs-alycia-baumgardner?utm_source=claude-skill): **IBF women's lightweight title**
-- [Tiara Brown (21-0) vs Ellie Scotney (13-0)](https://boxerbook.com/bouts/192182/tiara-brown-vs-ellie-scotney?utm_source=claude-skill): women's featherweight, unbeaten vs unbeaten
-- [Skye Nicolson (16-1) vs Miyo Yoshida (20-5)](https://boxerbook.com/bouts/192152/miyo-yoshida-vs-skye-nicolson?utm_source=claude-skill): **WBC junior featherweight title**
-- [Ramla Ali (11-2) vs Mikiah Kreps](https://boxerbook.com/bouts/192151/ramla-ali-vs-mikiah-kreps?utm_source=claude-skill): **vacant WBO and IBF women's junior featherweight titles**
-- [Irma García (26-5-1) vs Nataly Delgado (21-8-2)](https://boxerbook.com/bouts/192150/nataly-delgado-vs-irma-garcia?utm_source=claude-skill): **IBF women's junior bantamweight title**
-- [Brittany Sims (2-0) vs Shera Mae Patricio (3-0)](https://boxerbook.com/bouts/192153/brittany-sims-vs-shera-mae-patricio?utm_source=claude-skill): **vacant WBA "regular" women's bantamweight title**
+## Sunday 8 November, 01:00 UTC (Saturday evening in the Americas)
 
-## Other cards
-- **Friday 6 Nov, 07:00 UTC:** [Paul Gallen (16-2-1) vs Nelson Asofa-Solomona (1-0)](https://boxerbook.com/bouts/194029/paul-gallen-vs-nelson-asofa-solomona?utm_source=claude-skill). Boxerbook has no venue or broadcaster for this one yet.
-- **Saturday 7 Nov, Korakuen Hall, Tokyo (U-NEXT, Japan):** [Kenichi Ogawa (32-2-1) vs Jae-woo Lee](https://boxerbook.com/bouts/193310/jae-woo-lee-vs-kenichi-ogawa?utm_source=claude-skill) and Yamato Hata (19-2-1) vs Ryō Sagawa (14-5)
-- **Saturday 7 Nov, Miami (TrillerTV / Integrated Sports PPV):** [Maria Luz Peral vs Yokasta Valle](https://boxerbook.com/bouts/193234/maria-luz-peral-vs-yokasta-valle?utm_source=claude-skill)
-- **Saturday 7 Nov, Istanbul:** Mourad Aliev (15-1-1) vs Umut Camkiran, heavyweight
-- There are also smaller shows in Hoddesdon, Alfreton, Doncaster, Manchester (Wythenshawe Forum), Sakai (Japan) and Caracas, mostly prospects and debut fights.
+**[Arlington, USA](https://boxerbook.com/events/11863/2026-11-08-arlington?utm_source=claude-skill)**: on ESPN and ESPN+ in the US. This card is all women's bouts at the top:
+- [Alycia Baumgardner (18-1) vs Elif Nur Turhan (15-0)](https://boxerbook.com/bouts/192149/elif-nur-turhan-vs-alycia-baumgardner?utm_source=claude-skill): for the IBF women's lightweight title
+- [Tiara Brown (21-0) vs Ellie Scotney (13-0)](https://boxerbook.com/bouts/192182/tiara-brown-vs-ellie-scotney?utm_source=claude-skill): women's featherweight
+- [Skye Nicolson (16-1) vs Miyo Yoshida (20-5)](https://boxerbook.com/bouts/192152/miyo-yoshida-vs-skye-nicolson?utm_source=claude-skill): for the WBC junior featherweight title
+- [Ramla Ali (11-2) vs Mikiah Kreps (0-0)](https://boxerbook.com/bouts/192151/ramla-ali-vs-mikiah-kreps?utm_source=claude-skill): for the vacant WBO and IBF women's junior featherweight titles
+- [Irma García (26-5-1) vs Nataly Delgado (21-8-2)](https://boxerbook.com/bouts/192150/nataly-delgado-vs-irma-garcia?utm_source=claude-skill): for the IBF women's junior bantamweight title
+- [Brittany Sims (2-0) vs Shera Mae Patricio (3-0)](https://boxerbook.com/bouts/192153/brittany-sims-vs-shera-mae-patricio?utm_source=claude-skill): for the vacant WBA "regular" women's bantamweight title
 
-If you tell me your time zone, I can convert the start times. I can also show the Boxerbook forecasts for any of these fights.
+## Other fights
+- **Friday 6 November, 07:00 UTC:** [Paul Gallen (16-2-1) vs Nelson Asofa-Solomona (1-0)](https://boxerbook.com/bouts/194029/paul-gallen-vs-nelson-asofa-solomona?utm_source=claude-skill). Boxerbook has no venue or broadcaster for this yet.
+- **Saturday 7 November, [Miami](https://boxerbook.com/events/11927/2026-11-07-miami?utm_source=claude-skill):** [Maria Luz Peral vs Yokasta Valle](https://boxerbook.com/bouts/193234/maria-luz-peral-vs-yokasta-valle?utm_source=claude-skill), on Integrated Sports PPV and TrillerTV.
+- **Saturday 7 November, [Istanbul](https://boxerbook.com/events/11877/2026-11-07-istanbul?utm_source=claude-skill):** [Mourad Aliev (15-1-1) vs Umut Camkiran (1-0)](https://boxerbook.com/bouts/192180/umut-camkiran-vs-mourad-aliev?utm_source=claude-skill), heavyweight.
+- There are also smaller cards in Hoddesdon, Alfreton, Doncaster, Manchester (Wythenshawe Forum), Sakai (Japan, on YouTube) and Caracas. They're all on the [full schedule](https://boxerbook.com/schedule?utm_source=claude-skill).
+
+Records are each boxer's record going into the fight. If you tell me your time zone, I can convert the start times.
 
 Source: [Boxerbook](https://boxerbook.com/schedule?utm_source=claude-skill)
 
 ## Final answer
 
-Boxerbook lists 71 bouts on 15 cards from Friday 6 to Sunday 8 November 2026. These are the main ones. Times are when each card starts, in UTC. Main events usually begin 2–4 hours later. Records are going into each fight.
+This weekend (Friday 6 – Sunday 8 November 2026) has 71 scheduled bouts. The biggest nights are in Manchester, London and Arlington, all on Saturday 7 November. Times below are when each **card** starts, in UTC. Main events start later.
 
-## Saturday 7 Nov: London, Copper Box Arena
-**Card starts 16:30 UTC · Sky Sports** · [Card](https://boxerbook.com/events/11861/2026-11-07-london?utm_source=claude-skill)
+## Saturday 7 November
+
+**[Manchester Arena, Manchester, UK](https://boxerbook.com/events/11860/2026-11-07-manchester?utm_source=claude-skill)**: starts 21:00 UTC, on DAZN in Spain, Mexico and the US (Spanish)
+- [Joshua Buatsi (20-1) vs Willy Hutchinson (20-2)](https://boxerbook.com/bouts/192140/willy-hutchinson-vs-joshua-buatsi?utm_source=claude-skill): light heavyweight, 12 rounds, for the vacant WBC interim light heavyweight title
+- [Jack Rafferty (27-0-1) vs Hovhannes Martirosyan](https://boxerbook.com/bouts/192141/hovhannes-martirosyan-vs-jack-rafferty?utm_source=claude-skill): super lightweight, 12 rounds
+
+**[Copper Box Arena, London, UK](https://boxerbook.com/events/11861/2026-11-07-london?utm_source=claude-skill)**: starts 16:30 UTC, on Sky Sports
 - [Chris Billam-Smith (22-2) vs Cheavon Clarke (12-2)](https://boxerbook.com/bouts/192142/cheavon-clarke-vs-chris-billam-smith?utm_source=claude-skill): cruiserweight, 10 rounds
 - [Denzel Bentley (31-3-1) vs Shane Mosley Jr.](https://boxerbook.com/bouts/192143/shane-mosley-jr-vs-denzel-bentley?utm_source=claude-skill): middleweight, 12 rounds
 - [Umar Dzambekov (13-0) vs Zach Parker (26-2)](https://boxerbook.com/bouts/192144/zach-parker-vs-umar-dzambekov?utm_source=claude-skill): light heavyweight, 10 rounds
-- Also on the card: Ezra Taylor (13-1) vs Bradley Rea, plus prospects Da'Mazion Vanhouter and Sam Hickey
+- [Ezra Taylor (13-1) vs Bradley Rea (1-2)](https://boxerbook.com/bouts/193151/ezra-taylor-vs-bradley-rea?utm_source=claude-skill): light heavyweight
 
-## Saturday 7 Nov: Manchester Arena
-**Card starts 21:00 UTC · DAZN (Spain, Mexico, US Spanish-language listed)** · [Card](https://boxerbook.com/events/11860/2026-11-07-manchester?utm_source=claude-skill)
-- [Joshua Buatsi (20-1) vs Willy Hutchinson (20-2)](https://boxerbook.com/bouts/192140/willy-hutchinson-vs-joshua-buatsi?utm_source=claude-skill): **vacant WBC interim light heavyweight title**, 12 rounds
-- [Jack Rafferty (27-0-1) vs Hovhannes Martirosyan](https://boxerbook.com/bouts/192141/hovhannes-martirosyan-vs-jack-rafferty?utm_source=claude-skill): super lightweight, 12 rounds
+**[Albuquerque, USA](https://boxerbook.com/events/11862/2026-11-07-albuquerque?utm_source=claude-skill)**: on DAZN
+- [Abraham Perez (15-0) vs Yankiel Rivera (7-1-1)](https://boxerbook.com/bouts/192148/yankiel-rivera-vs-abraham-perez?utm_source=claude-skill): flyweight, 12 rounds, for the WBA interim flyweight title
 
-## Saturday 7 Nov: Albuquerque, US
-**DAZN (worldwide) · start time not on record** · [Card](https://boxerbook.com/events/11862/2026-11-07-albuquerque?utm_source=claude-skill)
-- [Abraham Perez (15-0) vs Yankiel Rivera (7-1-1)](https://boxerbook.com/bouts/192148/yankiel-rivera-vs-abraham-perez?utm_source=claude-skill): **WBA interim flyweight title**, 12 rounds
+**[Korakuen Hall, Japan](https://boxerbook.com/events/11915/2026-11-07?utm_source=claude-skill)**: on U-NEXT in Japan
+- [Kenichi Ogawa (32-2-1) vs Jae-woo Lee](https://boxerbook.com/bouts/193310/jae-woo-lee-vs-kenichi-ogawa?utm_source=claude-skill): super featherweight, 10 rounds
+- [Yamato Hata (19-2-1) vs Ryō Sagawa (14-5)](https://boxerbook.com/bouts/193311/ryo-sagawa-vs-yamato-hata?utm_source=claude-skill): super featherweight, 10 rounds
 
-## Sunday 8 Nov, 01:00 UTC (Saturday evening in the US): Arlington, US
-**ESPN / ESPN+ (US)** · [Card](https://boxerbook.com/events/11863/2026-11-08-arlington?utm_source=claude-skill). This card is stacked with women's title fights:
-- [Alycia Baumgardner (18-1) vs Elif Nur Turhan (15-0)](https://boxerbook.com/bouts/192149/elif-nur-turhan-vs-alycia-baumgardner?utm_source=claude-skill): **IBF women's lightweight title**
-- [Tiara Brown (21-0) vs Ellie Scotney (13-0)](https://boxerbook.com/bouts/192182/tiara-brown-vs-ellie-scotney?utm_source=claude-skill): women's featherweight, unbeaten vs unbeaten
-- [Skye Nicolson (16-1) vs Miyo Yoshida (20-5)](https://boxerbook.com/bouts/192152/miyo-yoshida-vs-skye-nicolson?utm_source=claude-skill): **WBC junior featherweight title**
-- [Ramla Ali (11-2) vs Mikiah Kreps](https://boxerbook.com/bouts/192151/ramla-ali-vs-mikiah-kreps?utm_source=claude-skill): **vacant WBO and IBF women's junior featherweight titles**
-- [Irma García (26-5-1) vs Nataly Delgado (21-8-2)](https://boxerbook.com/bouts/192150/nataly-delgado-vs-irma-garcia?utm_source=claude-skill): **IBF women's junior bantamweight title**
-- [Brittany Sims (2-0) vs Shera Mae Patricio (3-0)](https://boxerbook.com/bouts/192153/brittany-sims-vs-shera-mae-patricio?utm_source=claude-skill): **vacant WBA "regular" women's bantamweight title**
+## Sunday 8 November, 01:00 UTC (Saturday evening in the Americas)
 
-## Other cards
-- **Friday 6 Nov, 07:00 UTC:** [Paul Gallen (16-2-1) vs Nelson Asofa-Solomona (1-0)](https://boxerbook.com/bouts/194029/paul-gallen-vs-nelson-asofa-solomona?utm_source=claude-skill). Boxerbook has no venue or broadcaster for this one yet.
-- **Saturday 7 Nov, Korakuen Hall, Tokyo (U-NEXT, Japan):** [Kenichi Ogawa (32-2-1) vs Jae-woo Lee](https://boxerbook.com/bouts/193310/jae-woo-lee-vs-kenichi-ogawa?utm_source=claude-skill) and Yamato Hata (19-2-1) vs Ryō Sagawa (14-5)
-- **Saturday 7 Nov, Miami (TrillerTV / Integrated Sports PPV):** [Maria Luz Peral vs Yokasta Valle](https://boxerbook.com/bouts/193234/maria-luz-peral-vs-yokasta-valle?utm_source=claude-skill)
-- **Saturday 7 Nov, Istanbul:** Mourad Aliev (15-1-1) vs Umut Camkiran, heavyweight
-- There are also smaller shows in Hoddesdon, Alfreton, Doncaster, Manchester (Wythenshawe Forum), Sakai (Japan) and Caracas, mostly prospects and debut fights.
+**[Arlington, USA](https://boxerbook.com/events/11863/2026-11-08-arlington?utm_source=claude-skill)**: on ESPN and ESPN+ in the US. This card is all women's bouts at the top:
+- [Alycia Baumgardner (18-1) vs Elif Nur Turhan (15-0)](https://boxerbook.com/bouts/192149/elif-nur-turhan-vs-alycia-baumgardner?utm_source=claude-skill): for the IBF women's lightweight title
+- [Tiara Brown (21-0) vs Ellie Scotney (13-0)](https://boxerbook.com/bouts/192182/tiara-brown-vs-ellie-scotney?utm_source=claude-skill): women's featherweight
+- [Skye Nicolson (16-1) vs Miyo Yoshida (20-5)](https://boxerbook.com/bouts/192152/miyo-yoshida-vs-skye-nicolson?utm_source=claude-skill): for the WBC junior featherweight title
+- [Ramla Ali (11-2) vs Mikiah Kreps (0-0)](https://boxerbook.com/bouts/192151/ramla-ali-vs-mikiah-kreps?utm_source=claude-skill): for the vacant WBO and IBF women's junior featherweight titles
+- [Irma García (26-5-1) vs Nataly Delgado (21-8-2)](https://boxerbook.com/bouts/192150/nataly-delgado-vs-irma-garcia?utm_source=claude-skill): for the IBF women's junior bantamweight title
+- [Brittany Sims (2-0) vs Shera Mae Patricio (3-0)](https://boxerbook.com/bouts/192153/brittany-sims-vs-shera-mae-patricio?utm_source=claude-skill): for the vacant WBA "regular" women's bantamweight title
 
-If you tell me your time zone, I can convert the start times. I can also show the Boxerbook forecasts for any of these fights.
+## Other fights
+- **Friday 6 November, 07:00 UTC:** [Paul Gallen (16-2-1) vs Nelson Asofa-Solomona (1-0)](https://boxerbook.com/bouts/194029/paul-gallen-vs-nelson-asofa-solomona?utm_source=claude-skill). Boxerbook has no venue or broadcaster for this yet.
+- **Saturday 7 November, [Miami](https://boxerbook.com/events/11927/2026-11-07-miami?utm_source=claude-skill):** [Maria Luz Peral vs Yokasta Valle](https://boxerbook.com/bouts/193234/maria-luz-peral-vs-yokasta-valle?utm_source=claude-skill), on Integrated Sports PPV and TrillerTV.
+- **Saturday 7 November, [Istanbul](https://boxerbook.com/events/11877/2026-11-07-istanbul?utm_source=claude-skill):** [Mourad Aliev (15-1-1) vs Umut Camkiran (1-0)](https://boxerbook.com/bouts/192180/umut-camkiran-vs-mourad-aliev?utm_source=claude-skill), heavyweight.
+- There are also smaller cards in Hoddesdon, Alfreton, Doncaster, Manchester (Wythenshawe Forum), Sakai (Japan, on YouTube) and Caracas. They're all on the [full schedule](https://boxerbook.com/schedule?utm_source=claude-skill).
+
+Records are each boxer's record going into the fight. If you tell me your time zone, I can convert the start times.
 
 Source: [Boxerbook](https://boxerbook.com/schedule?utm_source=claude-skill)
 
@@ -192,15 +164,15 @@ Source: [Boxerbook](https://boxerbook.com/schedule?utm_source=claude-skill)
     "no_betting_tips": true,
     "language": true,
     "task": true,
-    "notes": "Facts match the tool results (cards, titles, records, broadcasters, UTC times); it admits the missing Albuquerque start time. Minor extras like 'Tokyo' and the '2–4 hours later' remark come from general knowledge."
+    "notes": "Facts match the tool output. The intro lumps Arlington into Saturday 7 Nov, but the body correctly dates it Sunday 8 Nov 01:00 UTC with a clarification."
   },
   "checks": {
     "used_data_tool": true,
     "has_boxerbook_link": true,
     "lang_heuristic": true,
     "utm_tagged": true,
-    "read_reference": true
+    "read_reference": false
   },
-  "usd": 0.1851
+  "usd": 0.1468
 }
 ```

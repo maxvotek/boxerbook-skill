@@ -17,51 +17,31 @@ Source: [Boxerbook](https://boxerbook.com/ru/boksery/tyson-fury-q1000592)
 
 **assistant (interim)**
 
-**Нет, Тайсон Фьюри и Канело Альварес никогда не встречались на профессиональном ринге.** В Boxerbook нет ни одного их боя друг с другом, и совместный бой не запланирован. Они выступают в очень разных весовых категориях: Фьюри — супертяжеловес, а Канело намного легче.
+Нет, Тайсон Фьюри и Канело Альварес никогда не встречались на профессиональном ринге. В Boxerbook нет ни одного их боя друг с другом, и никакого поединка между ними не запланировано. Они выступают в разных весовых категориях: Фьюри — супертяж, Канело в последние годы дерётся во втором среднем весе.
 
-**Тайсон Фьюри** ([профиль](https://boxerbook.com/ru/boksery/tyson-fury-q1000592?utm_source=claude-skill)): рекорд 36-2-1 на 2 ноября 2026 года.
+**Текущие рекорды (на 2 ноября 2026):**
 
-Последние бои:
-- 24 июля 2026: победил Мариуша Ваха, отказ соперника продолжать бой (RTD) в 7-м раунде ([бой](https://boxerbook.com/ru/boi/4151/tyson-fury-vs-mariusz-wach?utm_source=claude-skill))
-- 11 апреля 2026: победил Арсланбека Махмудова единогласным решением (UD) за 12 раундов ([бой](https://boxerbook.com/ru/boi/4152/tyson-fury-vs-arslanbek-makhmudov?utm_source=claude-skill))
-- 21 декабря 2024: проиграл Александру Усику единогласным решением ([бой](https://boxerbook.com/ru/boi/4153/tyson-fury-vs-oleksandr-usyk?utm_source=claude-skill))
+| | [Тайсон Фьюри](https://boxerbook.com/ru/boksery/tyson-fury-q1000592?utm_source=claude-skill) | [Канело Альварес](https://boxerbook.com/ru/boksery/canelo-alvarez-q2117769?utm_source=claude-skill) |
+|---|---|---|
+| Рекорд | 36-2-1 | 64-3-2 |
+| Последний бой | Победа над Мариушем Вахом, отказ от продолжения (RTD) в 7-м раунде, 24 июля 2026 ([бой](https://boxerbook.com/ru/boi/4151/tyson-fury-vs-mariusz-wach?utm_source=claude-skill)) | Победа над Кристианом М'билли единогласным решением судей (UD), 12 раундов, 31 октября 2026 ([бой](https://boxerbook.com/ru/boi/192134/christian-m-billi-vs-canelo-alvarez?utm_source=claude-skill)) |
+| Следующий бой | Против Энтони Джошуа, 11 декабря 2026 ([бой](https://boxerbook.com/ru/boi/192176/tyson-fury-vs-anthony-joshua?utm_source=claude-skill)) | Не запланирован |
 
-Следующий бой: против Энтони Джошуа 11 декабря 2026 года ([бой](https://boxerbook.com/ru/boi/192176/tyson-fury-vs-anthony-joshua?utm_source=claude-skill)).
-
-**Канело Альварес** ([профиль](https://boxerbook.com/ru/boksery/canelo-alvarez-q2117769?utm_source=claude-skill)): рекорд 64-3-2 на 2 ноября 2026 года.
-
-Последние бои:
-- 31 октября 2026: победил Кристиана М'билли единогласным решением ([бой](https://boxerbook.com/ru/boi/192134/christian-m-billi-vs-canelo-alvarez?utm_source=claude-skill))
-- 13 сентября 2025: проиграл Теренсу Кроуфорду единогласным решением ([бой](https://boxerbook.com/ru/boi/25025/terence-crawford-vs-canelo-alvarez?utm_source=claude-skill))
-- 3 мая 2025: победил Уильяма Скалла единогласным решением ([бой](https://boxerbook.com/ru/boi/11493/william-scull-vs-canelo-alvarez?utm_source=claude-skill))
-
-Следующий бой Канело пока не объявлен.
-
-Source: [Boxerbook](https://boxerbook.com/ru/boksery/tyson-fury-q1000592?utm_source=claude-skill)
+Источник: [Boxerbook](https://boxerbook.com/ru/boksery/tyson-fury-q1000592?utm_source=claude-skill)
 
 ## Final answer
 
-**Нет, Тайсон Фьюри и Канело Альварес никогда не встречались на профессиональном ринге.** В Boxerbook нет ни одного их боя друг с другом, и совместный бой не запланирован. Они выступают в очень разных весовых категориях: Фьюри — супертяжеловес, а Канело намного легче.
+Нет, Тайсон Фьюри и Канело Альварес никогда не встречались на профессиональном ринге. В Boxerbook нет ни одного их боя друг с другом, и никакого поединка между ними не запланировано. Они выступают в разных весовых категориях: Фьюри — супертяж, Канело в последние годы дерётся во втором среднем весе.
 
-**Тайсон Фьюри** ([профиль](https://boxerbook.com/ru/boksery/tyson-fury-q1000592?utm_source=claude-skill)): рекорд 36-2-1 на 2 ноября 2026 года.
+**Текущие рекорды (на 2 ноября 2026):**
 
-Последние бои:
-- 24 июля 2026: победил Мариуша Ваха, отказ соперника продолжать бой (RTD) в 7-м раунде ([бой](https://boxerbook.com/ru/boi/4151/tyson-fury-vs-mariusz-wach?utm_source=claude-skill))
-- 11 апреля 2026: победил Арсланбека Махмудова единогласным решением (UD) за 12 раундов ([бой](https://boxerbook.com/ru/boi/4152/tyson-fury-vs-arslanbek-makhmudov?utm_source=claude-skill))
-- 21 декабря 2024: проиграл Александру Усику единогласным решением ([бой](https://boxerbook.com/ru/boi/4153/tyson-fury-vs-oleksandr-usyk?utm_source=claude-skill))
+| | [Тайсон Фьюри](https://boxerbook.com/ru/boksery/tyson-fury-q1000592?utm_source=claude-skill) | [Канело Альварес](https://boxerbook.com/ru/boksery/canelo-alvarez-q2117769?utm_source=claude-skill) |
+|---|---|---|
+| Рекорд | 36-2-1 | 64-3-2 |
+| Последний бой | Победа над Мариушем Вахом, отказ от продолжения (RTD) в 7-м раунде, 24 июля 2026 ([бой](https://boxerbook.com/ru/boi/4151/tyson-fury-vs-mariusz-wach?utm_source=claude-skill)) | Победа над Кристианом М'билли единогласным решением судей (UD), 12 раундов, 31 октября 2026 ([бой](https://boxerbook.com/ru/boi/192134/christian-m-billi-vs-canelo-alvarez?utm_source=claude-skill)) |
+| Следующий бой | Против Энтони Джошуа, 11 декабря 2026 ([бой](https://boxerbook.com/ru/boi/192176/tyson-fury-vs-anthony-joshua?utm_source=claude-skill)) | Не запланирован |
 
-Следующий бой: против Энтони Джошуа 11 декабря 2026 года ([бой](https://boxerbook.com/ru/boi/192176/tyson-fury-vs-anthony-joshua?utm_source=claude-skill)).
-
-**Канело Альварес** ([профиль](https://boxerbook.com/ru/boksery/canelo-alvarez-q2117769?utm_source=claude-skill)): рекорд 64-3-2 на 2 ноября 2026 года.
-
-Последние бои:
-- 31 октября 2026: победил Кристиана М'билли единогласным решением ([бой](https://boxerbook.com/ru/boi/192134/christian-m-billi-vs-canelo-alvarez?utm_source=claude-skill))
-- 13 сентября 2025: проиграл Теренсу Кроуфорду единогласным решением ([бой](https://boxerbook.com/ru/boi/25025/terence-crawford-vs-canelo-alvarez?utm_source=claude-skill))
-- 3 мая 2025: победил Уильяма Скалла единогласным решением ([бой](https://boxerbook.com/ru/boi/11493/william-scull-vs-canelo-alvarez?utm_source=claude-skill))
-
-Следующий бой Канело пока не объявлен.
-
-Source: [Boxerbook](https://boxerbook.com/ru/boksery/tyson-fury-q1000592?utm_source=claude-skill)
+Источник: [Boxerbook](https://boxerbook.com/ru/boksery/tyson-fury-q1000592?utm_source=claude-skill)
 
 ## Grade
 
@@ -74,7 +54,7 @@ Source: [Boxerbook](https://boxerbook.com/ru/boksery/tyson-fury-q1000592?utm_sou
     "no_betting_tips": true,
     "language": true,
     "task": true,
-    "notes": "The answer correctly says they never fought, gives both records, last fights with explicit dates and links to Boxerbook. The weight-class remark is general knowledge, not a record, result or date, so I did not count it against grounding."
+    "notes": "The answer matches the tool output (never fought, both records, last and next bouts, links). The weight-class remark (Fury heavyweight, Canelo super middleweight) is from general knowledge, not the tool, but it is minor and not a record or number."
   },
   "checks": {
     "used_data_tool": true,
@@ -83,6 +63,6 @@ Source: [Boxerbook](https://boxerbook.com/ru/boksery/tyson-fury-q1000592?utm_sou
     "utm_tagged": true,
     "read_reference": false
   },
-  "usd": 0.0348
+  "usd": 0.0441
 }
 ```
