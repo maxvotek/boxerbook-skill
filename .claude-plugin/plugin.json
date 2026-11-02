@@ -10,5 +10,7 @@
   "homepage": "https://boxerbook.com/developers?utm_source=claude-skill",
   "repository": "https://github.com/maxvotek/boxerbook-skill",
   "license": "MIT",
+  "icon": ".claude-plugin/icon.png",
+  "privacyPolicyUrl": "https://boxerbook.com/privacy",
   "keywords": ["boxing", "sports", "boxerbook", "mcp", "rankings", "fight-night", "sports-data"]
 }
