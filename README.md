@@ -103,6 +103,7 @@ These are real answers from the eval runs, on live data from 2 Nov 2026
 | **Any agent with skills.sh** | `npx skills add maxvotek/boxerbook-skill` | skill; uses the helper script / REST API |
 | **claude.ai** (Pro, Max, Team, Enterprise) | download `boxing-skill.zip` from [Releases](https://github.com/maxvotek/boxerbook-skill/releases/latest), then *Settings → Capabilities → Skills → Upload skill* | add the connector (below) **or** allow `boxerbook.com` for code execution |
 | **Claude Desktop / claude.ai connector** | *Settings → Connectors → Add custom connector*, URL `https://mcp.boxerbook.com/mcp` | MCP, no key |
+| **ChatGPT** | one click: [Boxerbook in the ChatGPT plugin directory](https://chatgpt.com/plugins/plugin_asdk_app_6ae8b4aba58481919a8606e886bdfd50), or search «Boxerbook» under Plugins | MCP, no key |
 | **Claude API** | SKILL.md as system prompt + the MCP connector ([example](examples/api_mcp_connector.py)) | MCP |
 | **Any MCP client** (Cursor, ChatGPT dev mode…) | remote MCP URL `https://mcp.boxerbook.com/mcp`, Streamable HTTP, no auth | MCP |
 
