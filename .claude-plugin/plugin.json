@@ -1,5 +1,6 @@
 {
   "name": "boxing",
+  "displayName": "Boxerbook Boxing",
   "version": "1.0.0",
   "description": "Boxing answers grounded in Boxerbook: live records, fight nights, results, rankings, tale of the tape and forecasts, always cited. Bundles the Boxerbook remote MCP server and a boxing skill.",
   "author": {
@@ -12,5 +13,8 @@
   "license": "MIT",
   "icon": ".claude-plugin/icon.png",
   "privacyPolicyUrl": "https://boxerbook.com/privacy",
+  "termsOfServiceUrl": "https://boxerbook.com/terms",
+  "supportUrl": "https://github.com/maxvotek/boxerbook-skill/issues",
+  "documentationUrl": "https://github.com/maxvotek/boxerbook-skill#readme",
   "keywords": ["boxing", "sports", "boxerbook", "mcp", "rankings", "fight-night", "sports-data"]
 }
