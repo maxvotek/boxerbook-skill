@@ -1,0 +1,26 @@
+{
+  "name": "boxerbook",
+  "owner": {
+    "name": "Boxerbook",
+    "email": "info@boxerbook.com"
+  },
+  "metadata": {
+    "description": "Boxing for Claude: the Boxerbook skill and remote MCP server (open boxing data, ODbL).",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "boxing",
+      "source": "./",
+      "description": "Boxing answers grounded in Boxerbook: records, fight nights, results, rankings, tale of the tape, forecasts. Skill + remote MCP server, no API key.",
+      "version": "1.0.0",
+      "author": { "name": "Boxerbook", "email": "info@boxerbook.com" },
+      "homepage": "https://boxerbook.com/developers?utm_source=claude-skill",
+      "repository": "https://github.com/mvtk1978/boxerbook-skill",
+      "license": "MIT",
+      "keywords": ["boxing", "sports", "mcp", "rankings"],
+      "category": "sports",
+      "strict": true
+    }
+  ]
+}

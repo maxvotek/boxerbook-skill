@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "boxerbook": {
+      "type": "http",
+      "url": "https://mcp.boxerbook.com/mcp"
+    }
+  }
+}
