@@ -1,6 +1,10 @@
 # Changelog
 
-## Unreleased
+## 1.0.1 — 2026-11-11
+- Plugin repo holds only Markdown, JSON and images (Claude plugin directory policy):
+  the REST helper, validator, zip builder, tests, evals and the API example moved to
+  the [`dev-tools` branch](https://github.com/maxvotek/boxerbook-skill/tree/dev-tools). Without MCP the skill now calls `boxerbook.com/v1`
+  directly, with recipes in `references/api.md`. README hero is a PNG.
 - Helper: read timeouts, bad JSON and HTTP-date `Retry-After` end as JSON errors,
   not tracebacks; long `Retry-After` is reported instead of retried early; utm tag
   only on https boxerbook.com site links; `bouts` and `h2h` return `other_matches`.

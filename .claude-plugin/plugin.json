@@ -1,7 +1,7 @@
 {
   "name": "boxing",
   "displayName": "Boxerbook Boxing",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Boxing answers grounded in Boxerbook: live records, fight nights, results, rankings, tale of the tape and forecasts, always cited. Bundles the Boxerbook remote MCP server and a boxing skill.",
   "author": {
     "name": "Boxerbook",

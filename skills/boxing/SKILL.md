@@ -2,9 +2,9 @@
 name: boxing
 description: Answers professional boxing questions with live, cited data from Boxerbook (boxerbook.com), the open world boxing database. Use it for any boxing question, even a casual one - a boxer's record or stats, last or next fight, who won and how, results from last night or the weekend, what boxing is on tonight or this weekend and where to watch, head to head, tale of the tape, world champions, belts, rankings (WBC, WBA, IBF, WBO, The Ring, TBRB), weight classes, pound for pound, decisions and scorecards, upsets, fight previews, predictions and odds, boxing posts for social media. Triggers in any language (boxeo, pelea, бокс, бой) and whenever a boxer is named (Canelo, Usyk, Inoue, Fury). Not for MMA/UFC, kickboxing or boxing workouts.
 license: MIT (skill text and scripts). Boxerbook data is ODbL, attribution "Boxerbook".
-compatibility: Needs the Boxerbook MCP server (https://mcp.boxerbook.com/mcp) or network access to boxerbook.com. Helper script needs python3 (stdlib only).
+compatibility: Needs the Boxerbook MCP server (https://mcp.boxerbook.com/mcp) or network access to boxerbook.com.
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
   author: Boxerbook
   homepage: https://boxerbook.com
 ---
@@ -23,10 +23,9 @@ what Boxerbook returns**, cite it, and be clear about what it does not know.
    - Boxerbook MCP tools available (names like `boxer`, `bout`,
      `boxing_schedule`, often prefixed `mcp__...boxerbook__`) → use them, with
      `lang` = the user's language (`en`, `es`, `ru`, `ja`; else `en`).
-   - You can run code with network access → `python3 scripts/boxerbook.py ...`
-     (path relative to this skill's folder; in Claude Code
-     `python3 "${CLAUDE_SKILL_DIR}/scripts/boxerbook.py" ...`). Run it, don't read it.
-   - You can fetch URLs → `https://boxerbook.com/v1/...` (JSON, no key).
+   - You can fetch URLs or run code with network access →
+     `https://boxerbook.com/v1/...` (JSON, no key; e.g. `curl -s`). Recipes for
+     each question: [references/api.md](references/api.md) section 3.
    - None of these → say you cannot reach Boxerbook right now, answer only
      general boxing knowledge (rules, divisions) and send the user to
      https://boxerbook.com. Do not state records or results from memory.
@@ -38,21 +37,21 @@ what Boxerbook returns**, cite it, and be clear about what it does not know.
    `Source: Boxerbook` line. Use a template from
    [references/templates.md](references/templates.md) when one fits.
 
-| Question | MCP tool | REST / helper |
+| Question | MCP tool | REST (`/v1/...`) |
 |---|---|---|
-| Boxer's record, stats, last/next fight | `boxer` | `boxer "<name>"` |
-| Last N fights, "how did X do lately" | `search`+`fetch boxer:<id>` or `bout` | `bouts "<name>" --limit N` |
-| Next fight, date, where to watch | `next_fight`, `where_to_watch` | `next "<name>"` |
-| "A vs B": did they fight, who won, tale of the tape, preview | `bout` query "A vs B" (+ `boxer` for each) | `h2h A B` + `boxer` each + `bout <id>` |
-| What's on tonight / this weekend | `boxing_schedule` | `schedule --when tonight\|weekend\|30d` |
-| Who won last night / this week | `boxing_results` | `results --days N` |
-| Rankings, champions of a division | `rankings` (publisher) | `rankings <code> --publisher wbc` |
-| Ambiguous name | `search_boxers` | `search "<name>"` |
+| Boxer's record, stats, last/next fight | `boxer` | `boxers/search?q=` → `boxers/{id}` |
+| Last N fights, "how did X do lately" | `search`+`fetch boxer:<id>` or `bout` | `boxers/{id}/bouts?limit=N` |
+| Next fight, date, where to watch | `next_fight`, `where_to_watch` | `boxers/{id}` (`next_fight`) |
+| "A vs B": did they fight, who won, tale of the tape, preview | `bout` query "A vs B" (+ `boxer` for each) | `boxers/{id}/bouts?limit=50` of A, filter by B + `boxers/{id}` each + `bouts/{id}` |
+| What's on tonight / this weekend | `boxing_schedule` | `schedule?when=tonight\|weekend\|30d` |
+| Who won last night / this week | `boxing_results` | `results?days=N` |
+| Rankings, champions of a division | `rankings` (publisher) | `rankings/{code}?publisher=wbc` |
+| Ambiguous name | `search_boxers` | `boxers/search?q=` |
 | Data freshness | `boxerbook://status` | `status` |
 
 Full tool/endpoint reference and field meanings:
 [references/api.md](references/api.md). The MCP tools describe themselves;
-on the REST/helper path, or when a field's meaning is unclear (records going
+on the REST path, or when a field's meaning is unclear (records going
 in, `display`, `p_a`, `confirmation`), read it first.
 
 ## Rules (non-negotiable)

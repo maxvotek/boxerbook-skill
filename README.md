@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/assets/hero.svg" alt="Boxing for Claude, powered by Boxerbook" width="100%">
+  <img src="docs/assets/hero.png" alt="Boxing for Claude, powered by Boxerbook" width="100%">
 </p>
 
 <h1 align="center">Boxing for Claude</h1>
@@ -16,7 +16,7 @@
   <a href="https://agentskills.io/specification"><img alt="Agent Skills standard" src="https://img.shields.io/badge/Agent%20Skills-standard-8A2BE2"></a>
   <img alt="Claude Code plugin" src="https://img.shields.io/badge/Claude%20Code-plugin-D97757">
   <img alt="Remote MCP" src="https://img.shields.io/badge/MCP-remote%2C%20no%20key-555">
-  <a href="evals/RESULTS.md"><img alt="Evals" src="https://img.shields.io/badge/evals-30%2F30%20pass-success"></a>
+  <a href="https://github.com/maxvotek/boxerbook-skill/blob/dev-tools/evals/RESULTS.md"><img alt="Evals" src="https://img.shields.io/badge/evals-30%2F30%20pass-success"></a>
 </p>
 
 ```text
@@ -48,7 +48,7 @@ changes how Claude handles boxing:
 ## What it looks like
 
 These are real answers from the eval runs, on live data from 2 Nov 2026
-([all transcripts](evals/transcripts/)).
+([all transcripts](https://github.com/maxvotek/boxerbook-skill/tree/dev-tools/evals/transcripts)).
 
 <details open>
 <summary><b>"Who won Canelo's last fight and how?"</b></summary>
@@ -100,11 +100,11 @@ These are real answers from the eval runs, on live data from 2 Nov 2026
 | Where | How | Data path |
 |---|---|---|
 | **Claude Code** | `/plugin marketplace add maxvotek/boxerbook-skill` then `/plugin install boxing@boxerbook` | skill + bundled Boxerbook MCP server |
-| **Any agent with skills.sh** | `npx skills add maxvotek/boxerbook-skill` | skill; uses the helper script / REST API |
+| **Any agent with skills.sh** | `npx skills add maxvotek/boxerbook-skill` | skill; uses the REST API |
 | **claude.ai** (Pro, Max, Team, Enterprise) | download `boxing-skill.zip` from [Releases](https://github.com/maxvotek/boxerbook-skill/releases/latest), then *Settings → Capabilities → Skills → Upload skill* | add the connector (below) **or** allow `boxerbook.com` for code execution |
 | **Claude Desktop / claude.ai connector** | *Settings → Connectors → Add custom connector*, URL `https://mcp.boxerbook.com/mcp` | MCP, no key |
 | **ChatGPT** | one click: [Boxerbook in the ChatGPT plugin directory](https://chatgpt.com/plugins/plugin_asdk_app_6ae8b4aba58481919a8606e886bdfd50), or search «Boxerbook» under Plugins | MCP, no key |
-| **Claude API** | SKILL.md as system prompt + the MCP connector ([example](examples/api_mcp_connector.py)) | MCP |
+| **Claude API** | SKILL.md as system prompt + the MCP connector ([example](https://github.com/maxvotek/boxerbook-skill/blob/dev-tools/examples/api_mcp_connector.py)) | MCP |
 | **Any MCP client** (Cursor, ChatGPT dev mode…) | remote MCP URL `https://mcp.boxerbook.com/mcp`, Streamable HTTP, no auth | MCP |
 
 <details>
@@ -121,11 +121,10 @@ claude mcp add --transport http boxerbook https://mcp.boxerbook.com/mcp
 <details>
 <summary>claude.ai: build the zip yourself</summary>
 
-```bash
-python3 scripts/build_zip.py   # -> dist/boxing-skill.zip (boxing/SKILL.md at the zip root)
-```
+Zip the `skills/boxing` folder so that `boxing/SKILL.md` sits at the zip root
+(or use `scripts/build_zip.py` from the [`dev-tools` branch](https://github.com/maxvotek/boxerbook-skill/tree/dev-tools)).
 In claude.ai, code execution needs network access to `boxerbook.com` for the
-helper script (*Settings → Capabilities → allow network egress / domain allowlist*).
+REST API (*Settings → Capabilities → allow network egress / domain allowlist*).
 Adding the Boxerbook connector also works and needs no code execution.
 </details>
 
@@ -180,14 +179,10 @@ skills/boxing/
     glossary.md           en/es/ru boxing terms
     templates.md          fighter card, tale of the tape, fight night, recap,
                           rankings, forecast, upset analysis, social post
-  scripts/boxerbook.py    stdlib-only REST helper (search, boxer, bouts, h2h, …)
-evals/                    behavioural evals, trigger test, transcripts, results
-scripts/                  validate.py (schemas), build_zip.py (claude.ai bundle)
-tests/                    live tests of the helper and the MCP server
 ```
 
 How the skill decides where to get data: Boxerbook MCP tools if connected → the
-helper script if it can run code → plain HTTPS to `boxerbook.com/v1` → otherwise it
+REST API over plain HTTPS (`boxerbook.com/v1`) → otherwise it
 says it can't reach Boxerbook and answers only general rules questions.
 
 ## Tested, not just written
@@ -196,13 +191,14 @@ says it can't reach Boxerbook and answers only general rules questions.
   the REST-helper path, graded by a separate model that sees the tool results,
   on six checks: grounded, cited, dates, no betting tips, language, task.
   **15/15 on the MCP path, 15/15 on the REST path** in the final runs (each failure
-  found along the way became a rule in the skill). See [evals/RESULTS.md](evals/RESULTS.md).
+  found along the way became a rule in the skill). See [evals/RESULTS.md](https://github.com/maxvotek/boxerbook-skill/blob/dev-tools/evals/RESULTS.md).
 - **Triggering:** given only its name and description among 10 neighbouring skills
   (UFC/MMA, fitness incl. boxing workouts, sports scores, Boxing Day deals, box
   plots …), the skill was picked for **14/14** boxing prompts and for **0/10** near misses.
-- **Schemas:** `python3 scripts/validate.py` checks the SKILL.md frontmatter (portable
+- **Schemas:** `scripts/validate.py` in the [`dev-tools` branch](https://github.com/maxvotek/boxerbook-skill/tree/dev-tools) checks the SKILL.md frontmatter (portable
   fields only), the plugin and marketplace manifests (reserved names, sources) and `.mcp.json`.
-- **Live API:** `python3 -m unittest discover -s tests -v`.
+- **Live API:** tests in the [`dev-tools` branch](https://github.com/maxvotek/boxerbook-skill/tree/dev-tools). The plugin repo itself holds only
+  Markdown, JSON and images, as the Claude plugin directory requires.
 
 ## The data
 

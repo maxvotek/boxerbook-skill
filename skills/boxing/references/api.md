@@ -2,13 +2,13 @@
 
 Two doors to the same data. Use the MCP tools when they are connected (tool
 names `boxing_schedule`, `boxer`, `bout` … possibly prefixed, e.g.
-`mcp__plugin_boxing_boxerbook__boxer`). Otherwise use the REST API, through
-`scripts/boxerbook.py` when you can run code, or by fetching the URLs directly.
+`mcp__plugin_boxing_boxerbook__boxer`). Otherwise use the REST API by fetching
+the URLs directly (or `curl -s` when you can run code).
 
 ## Contents
 1. MCP server (tools, arguments, what each answers)
 2. REST API (endpoints, parameters)
-3. The helper script
+3. REST recipes (no MCP)
 4. Fields and how to read them
 5. Gotchas
 
@@ -62,22 +62,31 @@ Errors are RFC 7807 problems: `{"type","title","status","detail"}`.
 | `GET /v1/rankings/{division}` | `publisher` boxerbook\|wbc\|wba\|ibf\|wbo\|ring\|tbrb | `list_date`, `items[]`: position (publisher lists: 0 = titleholder, absent when vacant), name, id, slug, champion_flag (`champion`, `super`, `regular`, `interim`), record (when present), mu/rd (Boxerbook rating list); no url per item: build `https://boxerbook.com/boxers/<slug>` |
 | `GET /v1/status` | – | data freshness: last rating run, number of bouts and boxers |
 
-The REST API has no "A vs B" lookup and no `lang`: links are English. Use the
-helper's `h2h` command for head to head.
+The REST API has no "A vs B" lookup and no `lang`: links are English. For head
+to head, follow the recipe in section 3.
 
-## 3. The helper script
+## 3. REST recipes (no MCP)
 
-`python3 scripts/boxerbook.py <command>` (stdlib only). Commands:
-`search Q`, `boxer Q`, `bouts Q [--limit N --offset N]`, `next Q`, `h2h A B`,
-`bout ID`, `event ID`, `schedule [--when W --country CC --division D]`,
-`results [--days N --country CC --division D]`, `rankings DIV [--publisher P]`,
-`status`. `--full` keeps bulky fields (forecast `signals`, every source link);
-by default source lists are reduced to names + 3 links. Links to boxerbook.com
-come back tagged `?utm_source=claude-skill`; cite them as they are. Exit code 1
-with `{"error": ...}` on stderr when the API fails or a command that resolves a
-boxer (`boxer`, `bouts`, `next`, `h2h`) finds no match; `search` with no match
-exits 0 with an empty `results` list. `boxer`, `bouts`, `next` and `h2h` add
-`other_matches` when the name is shared: check them before answering.
+Fetch `https://boxerbook.com` + the path. On 429, wait `Retry-After` seconds
+once, then tell the user Boxerbook is busy; never fill the gap from memory.
+
+- **A boxer by name:** `/v1/boxers/search?q=<name>` → take the best hit's `id`
+  (several plausible hits = a shared name: ask, or name the options) →
+  `/v1/boxers/{id}` (record, `next_fight`, `last_result`, rating).
+- **Last N fights:** `/v1/boxers/{id}/bouts?limit=N` (newest first).
+- **Next fight and where to watch:** `next_fight` on the boxer card →
+  `/v1/bouts/{id}` for broadcasters, weigh-in, forecast.
+- **Head to head "A vs B":** resolve both ids, fetch
+  `/v1/boxers/{A}/bouts?limit=50` and keep the bouts whose `opponent.id` is B
+  (none = they never fought: give both records and last fights), then
+  `/v1/bouts/{id}` for the meeting(s).
+- **Tonight / this weekend:** `/v1/schedule?when=tonight` (or `weekend`, `30d`;
+  add `country=GB`, `division=hea`).
+- **Who won:** `/v1/results?days=2` (last night + today; up to 14).
+- **Rankings:** `/v1/rankings/{division}?publisher=wbc`.
+- **A card:** `/v1/events/{id}`. **Freshness:** `/v1/status`.
+
+Cite the `url` of each answer as given; `as_of` says when it was built.
 
 ## 4. Fields and how to read them
 

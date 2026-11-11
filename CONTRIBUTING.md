@@ -6,7 +6,7 @@ Thanks for helping make Claude better at boxing.
 
 - **Bad answers.** If the skill gave a wrong, uncited or invented answer, open an
   issue with the prompt, the surface (Claude Code, claude.ai, API) and the answer.
-  Better: add it as a case to `evals/cases.json`.
+  Better: add it as a case to `evals/cases.json` in the [`dev-tools` branch](https://github.com/maxvotek/boxerbook-skill/tree/dev-tools).
 - **Data errors** (a wrong record or result) belong to Boxerbook, not this repo:
   use the "report a discrepancy" link on the bout page at
   [boxerbook.com](https://boxerbook.com/?utm_source=claude-skill) or write to
@@ -21,9 +21,13 @@ Thanks for helping make Claude better at boxing.
    skill text. The skill fetches; it does not remember.
 2. Keep `SKILL.md` under 500 lines and the frontmatter to the portable fields
    (`name`, `description`, `license`, `compatibility`, `metadata`).
-3. The helper script stays Python standard library only.
+3. This repo holds only Markdown, JSON and PNG files (the Claude plugin directory
+   accepts nothing else from us). Code, tests and evals live in
+   the [`dev-tools` branch](https://github.com/maxvotek/boxerbook-skill/tree/dev-tools).
 
 ## Before you open a PR
+
+Check out the [`dev-tools` branch](https://github.com/maxvotek/boxerbook-skill/tree/dev-tools) next to this repo (`git worktree add ../boxerbook-skill-dev dev-tools`), then from it:
 
 ```bash
 python3 scripts/validate.py                 # schema checks (skill, plugin, marketplace, MCP)
