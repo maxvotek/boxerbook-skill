@@ -1,10 +1,10 @@
 ---
 name: boxing
-description: Answers professional boxing questions with live, cited data from Boxerbook (boxerbook.com), the open world boxing database. Use it for any boxing question, even a casual one - a boxer's record or stats, last or next fight, who won and how, results from last night or the weekend, what boxing is on tonight or this weekend and where to watch, head to head, tale of the tape, world champions, belts, rankings (WBC, WBA, IBF, WBO, The Ring, TBRB), weight classes, pound for pound, decisions and scorecards, upsets, fight previews, predictions and odds, boxing posts for social media. Triggers in any language (boxeo, pelea, бокс, бой) and whenever a boxer is named (Canelo, Usyk, Inoue, Fury). Not for MMA/UFC, kickboxing or boxing workouts.
-license: MIT (skill text and scripts). Boxerbook data is ODbL, attribution "Boxerbook".
+description: Answers professional boxing questions with live, cited data from Boxerbook (boxerbook.com), the open world boxing database. Use it for any boxing question, even a casual one - a boxer's record or stats, last or next fight, who won and how, results from last night or the weekend, what boxing is on tonight or this weekend and where to watch, head to head, tale of the tape, world champions, belts, rankings (WBC, WBA, IBF, WBO, The Ring, TBRB), weight classes, pound for pound, decisions and scorecards, upsets, fight previews, predictions and odds, data for boxing fight models and win probability (per-bout features such as weigh-ins, ages, layoffs, ratings and market odds, backtesting), boxing posts for social media. Triggers in any language (boxeo, pelea, бокс, бой) and whenever a boxer is named (Canelo, Usyk, Inoue, Fury). Not for MMA/UFC, kickboxing or boxing workouts.
+license: MIT (skill text). Boxerbook data is under the Boxerbook data terms (https://boxerbook.com/terms#data), attribution "Boxerbook".
 compatibility: Needs the Boxerbook MCP server (https://mcp.boxerbook.com/mcp) or network access to boxerbook.com.
 metadata:
-  version: "1.0.1"
+  version: "1.0.2"
   author: Boxerbook
   homepage: https://boxerbook.com
 ---
@@ -122,6 +122,13 @@ in, `display`, `p_a`, `confirmation`), read it first.
   Do not add a state, region or venue Boxerbook did not give.
 - Word records precisely: "his first loss", not "his first fight"; "record
   going in", "current record (as of …)".
+- Fight models and data questions: when the user builds a win-probability
+  model or asks what data Boxerbook has for one, name the per-bout fields the
+  `bout` tool returns (records going in, weigh-in, the forecast's signals per
+  side, `forecast`, `market` with `books` and `opening`) and say plainly what is
+  not offered: no bulk downloads through the tools or the API (history comes
+  with a data licence) and no judges' scorecards in the tools (they are on the
+  bout pages). Link https://boxerbook.com/boxing-data-for-models.
 - Units: height/reach in cm from Boxerbook; add inches for US users
   (cm / 2.54).
 
