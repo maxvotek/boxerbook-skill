@@ -42,4 +42,5 @@ Bump `version` in `.claude-plugin/plugin.json`, `.claude-plugin/marketplace.json
 and the SKILL.md `metadata` together, and add a line to `CHANGELOG.md`.
 
 Code and docs are MIT. By contributing you agree your contribution is MIT
-licensed. Boxerbook data stays ODbL.
+licensed. Boxerbook data is under the Boxerbook data terms
+(https://boxerbook.com/terms#data), not MIT.

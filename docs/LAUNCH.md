@@ -56,7 +56,7 @@ Description for the form:
   > **What it does:** gives Claude live professional boxing data (30k boxers, 190k bouts, schedule, results with sources, publisher rankings) from Boxerbook, with strict rules: no invented records, a boxerbook.com link for every fighter and bout, explicit dates, no betting tips.
   > **Who uses it:** boxing fans, writers and social media editors who ask Claude "who won last night" and get made-up answers today.
   > **Tested:** 15 behavioural prompts in English, Spanish and Russian, run on both the MCP path and the REST path, plus a triggering test against 10 neighbouring skills (results in `evals/RESULTS.md`).
-  > **Data:** open, ODbL, attribution "Boxerbook". Code MIT.
+  > **Data:** free to read and cite with a link (Boxerbook data terms). Code MIT.
 
 ### travisvn/awesome-claude-skills (15.7k stars)
 - Gates: **at least 10 stars**, **no AI-generated or AI-submitted PRs**, no SaaS
@@ -100,7 +100,7 @@ Description for the form:
 
 ### Reddit r/ClaudeAI (flair: "Built with Claude" or "Productivity")
 Title: **I made a boxing skill + MCP plugin so Claude stops making up fight records**
-> Ask Claude "who won Canelo's last fight?" and you often get a confident, wrong answer. I run Boxerbook, an open boxing database (30k boxers, 190k bouts, free API, ODbL), so I built a Claude skill that makes Claude look things up every time: a boxerbook.com link for every fighter and bout, dates written out, and it admits when data is missing (for example, judges' scorecards).
+> Ask Claude "who won Canelo's last fight?" and you often get a confident, wrong answer. I run Boxerbook, a boxing database (30k boxers, 190k bouts, free API), so I built a Claude skill that makes Claude look things up every time: a boxerbook.com link for every fighter and bout, dates written out, and it admits when data is missing (for example, judges' scorecards).
 > - Claude Code: `/plugin marketplace add maxvotek/boxerbook-skill`, then `/plugin install boxing@boxerbook`
 > - claude.ai: upload the zip from Releases
 > - API: SKILL.md + the MCP connector (example in the repo)
@@ -117,7 +117,7 @@ Also: r/ClaudeCode (install-focused version of the r/ClaudeAI post), r/mcp (MCP 
 2/ One line in Claude Code: `/plugin marketplace add maxvotek/boxerbook-skill`. Works in claude.ai (zip upload) and the API too. No API key.
 3/ Ask it: "Tale of the tape Usyk vs Dubois" → a side-by-side table built only from fetched data, with both of their fights dated and linked. [screenshot]
 4/ "Give me a lock bet" → it won't. You get the Boxerbook model and the market consensus as probabilities, with a not-betting-advice line.
-5/ English, Spanish and Russian (links follow the language). Open data, ODbL. Code MIT. github.com/maxvotek/boxerbook-skill
+5/ English, Spanish and Russian (links follow the language). Data free to cite with a link. Code MIT. github.com/maxvotek/boxerbook-skill
 
 ### Product Hunt
 - Name: **Boxerbook for Claude**. Tagline: *Live, cited boxing answers in Claude: records, fight nights, rankings.*
@@ -135,7 +135,7 @@ with the eval harness and the grounding rules (what HN cares about), not with bo
 3. What we took from the most-starred skill repos: a "pushy" description, a short SKILL.md that points to references, scripts that solve, evals first (see docs/RESEARCH.md).
 4. The rules: ground, cite, date, disambiguate, no betting tips, the user's language.
 5. How we tested it: 15 prompts × 2 data paths, an LLM judge that sees the tool results, a triggering test with near misses. What failed at first (odds without a disclaimer, "first fight" vs "first loss", the judge itself) and how the skill text changed.
-6. Try it (install lines) + the data is open (ODbL).
+6. Try it (install lines) + the data is free to read and cite with a link.
 
 ## 4. Measuring
 - GitHub: stars, clones and traffic (Insights → Traffic).

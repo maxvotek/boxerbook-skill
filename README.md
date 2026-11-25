@@ -12,7 +12,7 @@
 
 <p align="center">
   <a href="LICENSE"><img alt="Code: MIT" src="https://img.shields.io/badge/code-MIT-blue"></a>
-  <a href="https://opendatacommons.org/licenses/odbl/"><img alt="Data: ODbL" src="https://img.shields.io/badge/data-ODbL-brightgreen"></a>
+  <a href="https://boxerbook.com/terms#data"><img alt="Data: Boxerbook terms" src="https://img.shields.io/badge/data-Boxerbook%20terms-brightgreen"></a>
   <a href="https://agentskills.io/specification"><img alt="Agent Skills standard" src="https://img.shields.io/badge/Agent%20Skills-standard-8A2BE2"></a>
   <img alt="Claude Code plugin" src="https://img.shields.io/badge/Claude%20Code-plugin-D97757">
   <img alt="Remote MCP" src="https://img.shields.io/badge/MCP-remote%2C%20no%20key-555">
@@ -204,8 +204,9 @@ says it can't reach Boxerbook and answers only general rules questions.
 
 Boxerbook builds its catalog from open and official sources: athletic commissions,
 sanctioning bodies, Wikidata, Wikipedia and the press. Each result lists its sources.
-The data is open under the [ODbL](https://opendatacommons.org/licenses/odbl/) with
-attribution **"Boxerbook"**. The skill credits it in every answer. Free JSON API:
+The data is free to read and cite with a link and the credit **"Boxerbook"**;
+bulk copying and commercial use of the database itself need a written agreement
+([data terms](https://boxerbook.com/terms#data)). The skill credits it in every answer. Free JSON API:
 [boxerbook.com/developers](https://boxerbook.com/developers?utm_source=claude-skill),
 OpenAPI at [`/v1/openapi.json`](https://boxerbook.com/v1/openapi.json).
 Spotted a wrong record? Every bout page on
@@ -219,6 +220,6 @@ Bad answers make the best issues: send the prompt and what Claude said. See
 
 ## License
 
-Code and skill text: [MIT](LICENSE). Boxing data: ODbL, © Boxerbook contributors.
+Code and skill text: [MIT](LICENSE). Boxing data: [Boxerbook data terms](https://boxerbook.com/terms#data).
 Not affiliated with Anthropic, or with any sanctioning body or promoter.
 Forecasts are information, not betting advice.

@@ -5,7 +5,7 @@
     "email": "info@boxerbook.com"
   },
   "metadata": {
-    "description": "Boxing for Claude: the Boxerbook skill and remote MCP server (open boxing data, ODbL).",
+    "description": "Boxing for Claude: the Boxerbook skill and remote MCP server (boxing data, free to read and cite with a link).",
     "version": "1.0.2"
   },
   "plugins": [

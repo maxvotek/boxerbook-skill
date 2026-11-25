@@ -9,6 +9,8 @@
   not offered (no bulk downloads; scorecards only on the bout pages), with a link to
   boxerbook.com/boxing-data-for-models.
 - Data terms: the Boxerbook data terms (ODbL no longer applies to new data since 2026-11-03).
+- README, LICENSE note, CONTRIBUTING, marketplace description and launch drafts: the
+  ODbL mentions replaced by the Boxerbook data terms; the code stays MIT.
 - `docs/chatgpt-plugin.json`: the ChatGPT plugin manifest prepared as 1.0.2 (same texts).
 
 ## 1.0.1 — 2026-11-11

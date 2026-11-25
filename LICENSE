@@ -22,6 +22,8 @@ SOFTWARE.
 
 ---
 This licence covers the code and text in this repository (skill instructions,
-scripts, docs). Boxing data returned by Boxerbook (boxerbook.com) is licensed
-separately under the Open Database License (ODbL) 1.0 with the attribution
-"Boxerbook": https://opendatacommons.org/licenses/odbl/
+scripts, docs). Boxing data returned by Boxerbook (boxerbook.com) is not covered by it: it is
+free to read and cite with a link and the credit "Boxerbook"; bulk copying and
+commercial use of the database need a written agreement. Terms:
+https://boxerbook.com/terms#data (data released before 3 November 2026 stays
+under the ODbL it was released under).
